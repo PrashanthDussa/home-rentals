@@ -1,0 +1,89 @@
+
+    h1{
+    text-align:center;
+    color:orange;
+    }
+    h2
+    {
+    color:orange;
+    font-size:15px;
+    transform:translateX(+70%) translateY(-150%);
+    }
+    p
+    {
+    color:orange;
+    transform:translateX(10%) translateY(+50%);
+    }
+    option
+    {
+     color:orange;
+    background-color:black;
+    }
+    select
+    {
+     background-color:black;
+    color:white;
+    width:200px;
+    height:25px;
+    border-radius:5px;
+    cursor:pointer;
+    }
+    #button
+    {
+    margin:40px auto 20px;
+    width:80%;
+    display:block;
+    outline:none;
+    padding:10px 0;
+    border: ipx solid orange;
+    cursor:pointer;
+    background:transparent;
+    color:orange;
+    opacity:.8;
+    font-size:16px;
+    border-radius:10px;
+    }
+    #button:hover
+    {
+    background-color:green;
+    }
+    .form-box
+    {
+    width:400px;
+    margin:auto;
+    background:black;
+    padding:20px;
+    border-radius:20px;
+    opacity:.8;
+    transform:translateX(0%) translateY(35%);
+    }
+    .input-box
+    {
+    margin:31px auto;
+    width:80%;
+    border-bottom:1px solid orange;
+    padding-top:5px;
+    }
+    .input-box input
+    {
+      width:90%;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:white;
+    }
+    body
+    {
+    background-image:url(back.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    }
+    .eye
+    {
+    position:absolute;
+    }
+    #hide1
+    {
+    display:none;
+    }
+  

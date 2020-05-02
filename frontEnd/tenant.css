@@ -1,0 +1,68 @@
+    h1{
+    text-align:center;
+    color:orange;
+    }
+    p
+    {
+    color:orange;
+    transform:translateX(10%) translateY(+50%);
+    }
+    #button
+    {
+    margin:40px auto 20px;
+    width:80%;
+    display:block;
+    outline:none;
+    padding:10px 0;
+    border: ipx solid orange;
+    cursor:pointer;
+    background:transparent;
+    color:orange;
+    font-size:16px;
+    border-radius:10px;
+    }
+    #button:hover
+    {
+    background-color:green;
+    }
+    .form-box
+    {
+    width:400px;
+    margin:auto;
+    background:black;
+    padding:20px;
+    border-radius:20px;
+    opacity:.8;
+    transform:translateX(0%) translateY(+10%);
+    }
+    body
+    {
+    background-image:url(back.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+    }
+    p
+    {
+    color:orange;
+    transform:translateX(10%) translateY(+50%);
+    }
+    option
+    {
+     color:orange;
+    background-color:black;
+    }
+    select
+    {
+     background-color:black;
+    color:white;
+    width:200px;
+    height:25px;
+    border-radius:5px;
+    cursor:pointer;
+    }
+    .input-box
+    {
+    margin:10px auto;
+    width:80%;
+    padding-top:0.5px;
+    }

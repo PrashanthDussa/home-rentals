@@ -1,0 +1,57 @@
+    h1
+    {
+    font-size:20px;
+    width:600px;
+    background-color:black;
+    border-radius:10px;
+    margin:auto;
+    padding:10px;
+    color:orange;
+    text-align:center;
+    font-family:cursive;
+    position:absolute;
+    top:50%;
+    opacity:.8;
+    left:50%;
+    transform:translateX(-53%) translateY(-260%);
+    animation: text 3s 1;
+    }
+    h2
+    {
+    font-size:20px;
+    width:600px;
+    background-color:black;
+    border-radius:10px;
+    margin:auto;
+    color:orange;
+    text-align:center;
+    font-family:cursive;
+    opacity:.8;
+    position:absolute;
+    padding:10px;
+    top:50%;
+    left:50%;
+    transform:translateX(-53%) translateY(+85%);
+    animation: text 3s 1;
+    }
+    @keyframes text
+    {
+    0%
+    {
+    color:black;
+    }
+    35%
+    {
+    letter-spacing:5px;
+    }
+    85%
+    {
+    letter-spacing:0px;
+    }
+    }
+    body
+    {
+     background-image:url(back.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    }

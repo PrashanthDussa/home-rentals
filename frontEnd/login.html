@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Login page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="login.css">
+<script src="login.js"></script>
+</head>
+<body a link="gray" vlink="orange">
+<form action="/find-account" method="POST">
+<div class="form-box">
+<h1>Login</h1>
+
+<div class="input-box">
+<i class="fa fa-envelope" style="color:orange;"></i>
+<input type="email" placeholder="Email" name="email" id="myEmail" required>
+</div>
+<div class="input-box">
+<i class="fa fa-key" style="color:orange;"></i>
+<input type="password" placeholder="Enter Password(min 6 characters)" id="myInput" name="password" minlength="6" required>
+<span class="eye" onclick="myFunction()">
+<i id="hide1" class="fa fa-eye" style="color:orange;"></i>
+<i id="hide2" class="fa fa-eye-slash" style="color:orange;"></i>
+</span>
+</div>
+<input type="submit" value="Login" id="button"/>
+</form>
+<p><a href="Signup.html">New User</a></p>
+<h2><a href="intro.html">HOME</a></h2>
+</div>
+
+</body>
+</html>

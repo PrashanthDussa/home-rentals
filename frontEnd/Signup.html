@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Sign up page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="signup.css">
+<script src="signup.js"></script>
+</head>
+<body a link="gray" vlink="orange">
+<form action="/create-account" method="POST">
+<div class="form-box">
+<h1>Sign up</h1>
+<div class="input-box">
+<i class="fa fa-user-circle" style="color:orange;"></i>
+<input type="text" placeholder="First Name" name="firstName" required>
+</div>
+<div class="input-box">
+<i class="fa fa-user-circle" style="color:orange;"></i>
+<input type="text" placeholder="Last name" name="lastName" required>
+</div>
+<div class="input-box">
+<i class="fa fa-envelope" style="color:orange;"></i>
+<input type="email" placeholder="Email" name="email" required>
+</div>
+<div class="input-box">
+<i class="fa fa-mobile" style="font-size:23px;color:orange;"></i>
+<input type="text" placeholder="Mobile Number(10 digit only)" name="phoneNumber" pattern="[0-9]{10}" maxlength="10" required>
+</div>
+<div class="input-box">
+<i class="fa fa-key" style="color:orange;"></i>
+<input type="password" placeholder="Enter Password(min 6 characters)" id="myInput" name="password" minlength="6" required>
+<span class="eye" onclick="myFunction()">
+<i id="hide1" class="fa fa-eye" style="color:orange;"></i>
+<i id="hide2" class="fa fa-eye-slash" style="color:orange;"></i>
+</span>
+</div>
+<p>Security Question:
+<select name="securityQuestion">
+<option>What is your Birth place?</option>
+<option>What is your Nick name?</option>
+<option>What is your School name?</option>
+</select>
+</p>
+<div class="input-box">
+<i class="fa fa-hand-o-right" style="color:orange;"></i>
+<input type="text" placeholder="Security answer" name="securityAnswer" required>
+</div>
+<input type="submit" value="Create acount" id="button"/>
+</form>
+<p><a href="Login.html">back</a></p>
+<h2><a href="intro.html">HOME</a></h2>
+</div>
+
+</body>
+</html>

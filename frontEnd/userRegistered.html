@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Registered Succesfully</title>
+<style type="text/css">
+h1
+{
+font-size:20px;
+width:600px;
+background-color:black;
+border-radius:10px;
+margin:auto;
+padding:10px;
+color:white;
+text-align:center;
+font-family:cursive;
+opacity:.8;
+position:absolute;
+top:50%;
+left:50%;
+transform:translateX(-50%) translateY(-150%);
+animation: text 3s 1;
+}
+
+@keyframes text
+{
+0%
+{
+color:black;
+}
+35%
+{
+letter-spacing:5px;
+}
+85%
+{
+letter-spacing:0px;
+}
+}
+#button
+{
+width:300px;
+font-size:20px;
+color:white;
+height:50px;
+opacity:.8;
+border-radius:10px;
+background-color:black;
+text-align:center;
+font-family:fantasy;
+position:absolute;
+top:50%;
+left:50%;
+transform:translateX(-56%) translateY(+150%);
+}
+
+#button:hover
+{
+background-color:green;
+cursor: pointer;
+}
+body
+{
+ background-image:url(back.jpg);
+ background-size:cover;
+background-attachment:fixed;
+}
+</style>
+</head>
+<body>
+<h1>SUCCESS!!</h1>
+<form action="login.html">
+<input type="submit" value="Login Here" id="button"/>
+</form>
+</body>
+</html>
