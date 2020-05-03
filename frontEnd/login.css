@@ -1,4 +1,14 @@
 
+      a:link{
+       color:white;
+      text-decoration: solid;
+        }
+      a:visited{
+        color:white;
+      }
+      a:hover{
+        color:orange;
+      }
     h1{
     text-align:center;
     color:orange;
