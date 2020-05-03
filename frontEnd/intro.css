@@ -1,7 +1,14 @@
-    h2
+ html { 
+    background: url(back.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+   h2
     {
-        font-size:50px;
-        width:600px;
+        font-size:40px;
+        width:500px;
         background-color:black;
         border-radius:20px;
         margin:auto;
@@ -9,12 +16,12 @@
         font-weight:bolder;
         color:orange;
         text-align:center;
-        font-family:Fixed,monospace;
+        font-family: fantasy;
         position:absolute;
         opacity:.8;
         top:50%;
         left:50%;
-        transform:translateX(-53%) translateY(-400%);
+        transform:translateX(-53%) translateY(-380%);
         animation: text 3s 10;
     }
     @keyframes text
@@ -55,9 +62,11 @@
         background-color:green;
         cursor: pointer;
     }
-    body
+    /* body
     {
         background-image:url(back.jpg);
         background-size:cover;
-        background-attachment:fixed;
-    }
+        /* background-attachment:fixed; */
+        /* background-position:center;
+        background-repeat: no-repeat; */
+    /* } */

@@ -1,6 +1,7 @@
     h1{
     text-align:center;
     color:orange;
+    font-size: 25px;
     }
     h2{
       color: orange;
@@ -46,11 +47,12 @@
     opacity:.8;
     transform:translateX(0%) translateY(+0%);
     }
-    body
-    {
-    background-image:url(back.jpg);
-    background-attachment:fixed;
-    background-size:cover;
+    html { 
+      background: url(back.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
     p
     {

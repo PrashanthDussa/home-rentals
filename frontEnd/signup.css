@@ -71,11 +71,12 @@ outline:none;
 background:transparent;
 color:white;
 }
-body
-{
-background-image:url(back.jpg);
-background-size:cover;
-background-attachment:fixed;
+html { 
+  background: url(back.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .eye
 {
