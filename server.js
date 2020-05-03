@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname,"frontEnd")));
 
 app.use(bodyParser.json());
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/',(req,res)=>{
 
@@ -44,16 +44,20 @@ app.post("/find-account",(req,res)=>{
     {
         if(!user)
         {
-            res.sendFile(path.join(__dirname+'/frontEnd/noUser.html'));
+          res.status(404).send();
         }
         else{
             if(password!==user.password)
             {
-                res.sendFile(path.join(__dirname+'/frontEnd/invalidPassword.html'));
+                res.status(400).send()
             }
             else{
                 var token = jwt.sign({email:user.email,firstName: user.firstName,lastName: user.lastName,phoneNumber: user.phoneNumber},"dussa");
-                res.send(user);
+                if(typeof window!== "undefined")
+                {
+                    localStorage.token= token;
+                }
+                res.status(200).send();
             }
         }
 
