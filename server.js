@@ -33,7 +33,7 @@ app.post('/create-account',(req,res)=>{
         res.sendFile(path.join(__dirname+'/frontEnd/userRegistered.html'));
         
     }).catch((e)=>{
-        res.status(400).send(e);
+        res.status(400).sendFile(path.join(__dirname+'/frontEnd/userExists.html'));
     })
 })
 app.post("/find-account",(req,res)=>{
