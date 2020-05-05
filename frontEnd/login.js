@@ -22,6 +22,7 @@ function sendValues()
 {
     var email = document.getElementById("myEmail").value;
     var password = document.getElementById("myInput").value;
+    
     let user={email:email,password: password};
     
     
@@ -48,7 +49,31 @@ function sendValues()
         // var a = JSON.stringify(data);
         // var b = JSON.parse(a);
         // alert(b.firstName);
-        localStorage.token = token;
+        sessionStorage.token = token;
     })
     
 }
+
+// $(function()
+// {
+//    $("#button").click(function()
+//    {
+//        var email=$("#myEmail").val();
+//        var password=$("#myInput").val();
+//        $.post("/find-account",{email:email,password:password},function(res,status)
+//        {
+//            if(res==="noUser")
+//            {
+//                      window.location.assign("/noUser.html");
+//            }
+//            else if(res=="invalidPassword")
+//            {
+//                window.location.assign("/invalidPassword.html");
+//            }
+//            else{
+//             window.location.assign("/selectOption.html");
+//            }
+        
+//        });
+//    })
+// })

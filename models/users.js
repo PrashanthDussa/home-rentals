@@ -101,6 +101,8 @@ UserSchema.methods.toJSON = function()
     return _.pick(userObject,['firstName','lastName','email','phoneNumber','ownerInfo']);
 }
 
+
+
 UserSchema.pre('save',function(next)
 {
     var user = this;
