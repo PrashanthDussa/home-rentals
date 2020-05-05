@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const _ = require('lodash');
 const jwt = require('jsonwebtoken');
-
+const bcrypt = require('bcryptjs');
 
 var {ObjectID} = require('mongodb');
 var {mongoose}= require('./db/mongoose');
@@ -47,18 +47,21 @@ app.post("/find-account",(req,res)=>{
           res.status(404).send();
         }
         else{
-            if(password!==user.password)
-            {
-                res.status(400).send()
-            }
-            else{
+            bcrypt.compare(password,user.password,(err,result)=>{
+                if(result===false)
+                {
+                 res.status(400).send()
+                }
+                else{
                 var token = jwt.sign({email:user.email,firstName: user.firstName,lastName: user.lastName,phoneNumber: user.phoneNumber},"dussa");
                 if(typeof window!== "undefined")
                 {
                     localStorage.token= token;
                 }
                 res.status(200).send();
-            }
+                }
+            })
+            
         }
 
     },function(err)
