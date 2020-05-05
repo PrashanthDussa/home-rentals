@@ -7,6 +7,7 @@ var authenticate = (req,res,next)=>{
         var decoded = jwt.verify(token,"dussa");
 
         req.user = decoded;
+        req.token = token;
         next();
     }
 }
