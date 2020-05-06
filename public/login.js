@@ -42,7 +42,7 @@ function sendValues()
             window.location.assign("/invalidPassword.html");
         }
         else{
-            window.location.assign("/selectOption.html")
+            window.location.assign("/selectOption")
               return res.text();
         }
      }).then((token)=>{
