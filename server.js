@@ -12,12 +12,16 @@ var {User} = require('./models/users');
 var app = express();
 const port = process.env.PORT || 100;
 
-app.use(express.static(path.join(__dirname,"images")));
+app.get("/selectOption.html",(req,res)=>{
+    res.send("abc");
+})
+
 app.use(express.static(path.join(__dirname,"frontEnd")));
 
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({extended: false}));
+
 
 app.get('/',(req,res)=>{
 
