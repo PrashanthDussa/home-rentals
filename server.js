@@ -57,18 +57,18 @@ app.post("/find-account",(req,res)=>{
     {
         if(!user)
         {
-            res.status(404).send();
+            res.status(404).sendFile(path.join(__dirname+'/public/noUser.html'));
         }
         else{
             bcrypt.compare(password,user.password,(err,result)=>{
                 if(result===false)
                 {
-                    res.status(400).send();
+                    res.status(400).sendFile(path.join(__dirname+'/public/invalidPassword.html'));
                 }
                 else{
-                var token = jwt.sign({email:user.email,firstName: user.firstName,lastName: user.lastName,phoneNumber: user.phoneNumber},"dussa");
+                // var token = jwt.sign({email:user.email,firstName: user.firstName,lastName: user.lastName,phoneNumber: user.phoneNumber},"dussa");
                 req.session.user = user;
-                res.status(200).send(token);
+                res.redirect("/selectOption");
               }
             })
             
