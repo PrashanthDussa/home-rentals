@@ -100,11 +100,7 @@ app.get("/selectOption",(req,res)=>{
  
        }
  })
-
- app.get("/logout",(req,res)=>{
-     req.session.reset();
-     res.redirect("/login.html");
- })
+ 
 
  app.get("/myAccount",(req,res)=>{
     if(req.session && req.session.user)
@@ -131,7 +127,193 @@ app.get("/selectOption",(req,res)=>{
        }
  })
 
+ app.get("/tenant",(req,res)=>{
+    if(req.session && req.session.user)
+    {
+        User.findOne({email:req.session.user.email}).then((user)=>{
+            if(!user)
+            {
+                req.session.reset();
+                res.sendFile(path.join(__dirname+'/public/login.html'));
+             }
+            else{
+                 res.render("Tenant.hbs");           
+             }
+        })
+    }
+    else{
+     res.sendFile(path.join(__dirname+'/public/login.html'));
+ 
+       }
+ })
 
+ app.get("/owner",(req,res)=>{
+    if(req.session && req.session.user)
+    {
+        User.findOne({email:req.session.user.email}).then((user)=>{
+            if(!user)
+            {
+                req.session.reset();
+                res.sendFile(path.join(__dirname+'/public/login.html'));
+             }
+            else{
+                 res.render("Owner.hbs");           
+             }
+        })
+    }
+    else{
+     res.sendFile(path.join(__dirname+'/public/login.html'));
+ 
+       }
+ })
+
+ app.post("/saveAddress",(req,res)=>{
+    if(req.session && req.session.user)
+    {
+        User.findOne({email:req.session.user.email}).then((user)=>{
+            if(!user)
+            {
+                req.session.reset();
+                res.sendFile(path.join(__dirname+'/public/login.html'));
+             }
+            else{
+                  var state = req.body.state;
+                  var district = req.body.district;
+                  var town = req.body.town;
+                  var area = req.body.area;
+                  var address = req.body.address;
+                  var houseDescription = req.body.houseDescription;
+                  var contactNumber = req.body.contactNumber;
+                  var veg,shop,milk,grocery,hospital,cinema,bus,rail;
+                  if(req.body.veg==='on')
+                  {
+                      veg = "present";
+                  }
+                  else{
+                      veg="absent";
+                  }
+                  if(req.body.shop==='on')
+                  {
+                      shop = "present";
+                  }
+                  else{
+                      shop="absent";
+                  }
+                  if(req.body.milk==='on')
+                  {
+                      milk = "present";
+                  }
+                  else{
+                      milk="absent";
+                  }
+                  if(req.body.grocery==='on')
+                  {
+                      grocery = "present";
+                  }
+                  else{
+                      grocery="absent";
+                  }
+                  if(req.body.hospital==='on')
+                  {
+                      hospital = "present";
+                  }
+                  else{
+                      hospital="absent";
+                  }
+                  if(req.body.cinema==='on')
+                  {
+                      cinema = "present";
+                  }
+                  else{
+                      cinema="absent";
+                  }
+                  if(req.body.bus==='on')
+                  {
+                      bus = "present";
+                  }
+                  else{
+                      bus="absent";
+                  }
+                  if(req.body.rail==='on')
+                  {
+                      rail = "present";
+                  }
+                  else{
+                      rail="absent";
+                  }
+                  user.ownerInfo.push({state,district,town,area,address,houseDescription,contactNumber,veg,shop,milk,grocery,hospital,cinema,bus,rail});
+                  user.save().then(()=>{
+                    res.sendFile(path.join(__dirname+'/public/addressRegistered.html'));
+                  })
+            }
+        })
+    }
+    else{
+     res.sendFile(path.join(__dirname+'/public/login.html'));
+ 
+       }
+ })
+
+ app.get("/getAddress",(req,res)=>{
+    if(req.session && req.session.user)
+    {
+        User.findOne({email:req.session.user.email}).then((user)=>{
+            if(!user)
+            {
+                req.session.reset();
+                res.sendFile(path.join(__dirname+'/public/login.html'));
+             }
+            else{
+                //  console.log(user.ownerInfo[0].state);
+                res.render("address.hbs",{
+                    state:user.ownerInfo[0].state,
+                    district:user.ownerInfo[0].district,
+                    town:user.ownerInfo[0].town,
+                    area:user.ownerInfo[0].area,
+                    address:user.ownerInfo[0].address,
+                    houseDescription:user.ownerInfo[0].houseDescription,
+                    contactNumber:user.ownerInfo[0].contactNumber
+                });        
+             }
+        })
+    }
+    else{
+     res.sendFile(path.join(__dirname+'/public/login.html'));
+ 
+       }
+ })
+
+ app.post("/findAddress",(req,res)=>{
+    if(req.session && req.session.user)
+    {
+        User.findOne({email:req.session.user.email}).then((user)=>{
+            if(!user)
+            {
+                req.session.reset();
+                res.sendFile(path.join(__dirname+'/public/login.html'));
+             }
+            else{
+                var state = req.body.state;
+                var district = req.body.district;
+                var town = req.body.town;
+                var area = req.body.area;
+               User.findOne({'ownerInfo.state':state,'ownerInfo.district':district,'ownerInfo.town':town,'ownerInfo.area':area}).then((user)=>
+               {
+                //    console.log(user.ownerInfo[0].contactNumber);
+               })
+            }
+        })
+    }
+    else{
+     res.sendFile(path.join(__dirname+'/public/login.html'));
+ 
+       }
+})
+
+ app.get("/logout",(req,res)=>{
+    req.session.reset();
+    res.redirect("/login.html");
+})
 
 app.listen(port,() => {
     console.log(`Server is up on port ${port}`);

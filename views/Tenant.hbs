@@ -2,48 +2,42 @@
 <html>
 <head>
 <title>Tenant</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/tenant.css">
-<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
-<script src="/js/tenant.js"></script>
 </head>
 <body>
-<form action="Search.html">
+<form action="/findAddress" method="POST">
 <div class="form-box">
-<h1>Search</h1>
-<div class="input-box">
+<h1>Details</h1>
+<div class="input-select">
 <p>State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<select>
+<select name="state">
 <option>Telangana</option>
 </select>
 </p>
 </div>
-<div class="input-box">
+<div class="input-select">
 <p>District:&nbsp;&nbsp;
-<select>
+<select name="district">
 <option>Jangaon</option>
 </select>
 </p>
 </div>
-<div class="input-box">
+<div class="input-select">
 <p>Town:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<select>
+<select name="town">
 <option>Jangaon</option>
 </select>
 </p>
 </div>
-<div class="input-box">
+<div class="input-select">
 <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<select>
+<select name="area">
 <option>Ganesh Street</option>
 <option>Sanjay Nagar</option>
 <option>Hyderabad Road</option>
 </select>
 </p>
-</div>
-<div class="input-box">
-    
-    <p><input type="checkbox" id="bac" checked> Bachelor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="fam">&nbsp;Family</p>
-
 </div>
 <input type="submit" value="Continue" id="button"/>
 </form>
