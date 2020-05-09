@@ -172,79 +172,87 @@ app.get("/selectOption",(req,res)=>{
     {
         User.findOne({email:req.session.user.email}).then((user)=>{
             if(!user)
-            {
+               {
                 req.session.reset();
                 res.sendFile(path.join(__dirname+'/public/login.html'));
-             }
+                }
             else{
-                  var state = req.body.state;
-                  var district = req.body.district;
-                  var town = req.body.town;
-                  var area = req.body.area;
-                  var address = req.body.address;
-                  var houseDescription = req.body.houseDescription;
-                  var contactNumber = req.body.contactNumber;
-                  var veg,shop,milk,grocery,hospital,cinema,bus,rail;
-                  if(req.body.veg==='on')
+                  if(user.ownerInfo[0])
                   {
-                      veg = "present";
-                  }
+                    res.sendFile(path.join(__dirname+'/public/addressFound.html'));
+                }
                   else{
-                      veg="absent";
+
+                    var state = req.body.state;
+                    var district = req.body.district;
+                    var town = req.body.town;
+                    var area = req.body.area;
+                    var address = req.body.address;
+                    var houseDescription = req.body.houseDescription;
+                    var contactNumber = req.body.contactNumber;
+                    var veg,shop,milk,grocery,hospital,cinema,bus,rail;
+                    if(req.body.veg==='on')
+                    {
+                        veg = "present";
+                    }
+                    else{
+                        veg="absent";
+                    }
+                    if(req.body.shop==='on')
+                    {
+                        shop = "present";
+                    }
+                    else{
+                        shop="absent";
+                    }
+                    if(req.body.milk==='on')
+                    {
+                        milk = "present";
+                    }
+                    else{
+                        milk="absent";
+                    }
+                    if(req.body.grocery==='on')
+                    {
+                        grocery = "present";
+                    }
+                    else{
+                        grocery="absent";
+                    }
+                    if(req.body.hospital==='on')
+                    {
+                        hospital = "present";
+                    }
+                    else{
+                        hospital="absent";
+                    }
+                    if(req.body.cinema==='on')
+                    {
+                        cinema = "present";
+                    }
+                    else{
+                        cinema="absent";
+                    }
+                    if(req.body.bus==='on')
+                    {
+                        bus = "present";
+                    }
+                    else{
+                        bus="absent";
+                    }
+                    if(req.body.rail==='on')
+                    {
+                        rail = "present";
+                    }
+                    else{
+                        rail="absent";
+                    }
+                    user.ownerInfo.push({state,district,town,area,address,houseDescription,contactNumber,veg,shop,milk,grocery,hospital,cinema,bus,rail});
+                    user.save().then(()=>{
+                      res.sendFile(path.join(__dirname+'/public/addressRegistered.html'));
+                    })
                   }
-                  if(req.body.shop==='on')
-                  {
-                      shop = "present";
-                  }
-                  else{
-                      shop="absent";
-                  }
-                  if(req.body.milk==='on')
-                  {
-                      milk = "present";
-                  }
-                  else{
-                      milk="absent";
-                  }
-                  if(req.body.grocery==='on')
-                  {
-                      grocery = "present";
-                  }
-                  else{
-                      grocery="absent";
-                  }
-                  if(req.body.hospital==='on')
-                  {
-                      hospital = "present";
-                  }
-                  else{
-                      hospital="absent";
-                  }
-                  if(req.body.cinema==='on')
-                  {
-                      cinema = "present";
-                  }
-                  else{
-                      cinema="absent";
-                  }
-                  if(req.body.bus==='on')
-                  {
-                      bus = "present";
-                  }
-                  else{
-                      bus="absent";
-                  }
-                  if(req.body.rail==='on')
-                  {
-                      rail = "present";
-                  }
-                  else{
-                      rail="absent";
-                  }
-                  user.ownerInfo.push({state,district,town,area,address,houseDescription,contactNumber,veg,shop,milk,grocery,hospital,cinema,bus,rail});
-                  user.save().then(()=>{
-                    res.sendFile(path.join(__dirname+'/public/addressRegistered.html'));
-                  })
+               
             }
         })
     }
@@ -264,16 +272,21 @@ app.get("/selectOption",(req,res)=>{
                 res.sendFile(path.join(__dirname+'/public/login.html'));
              }
             else{
-                //  console.log(user.ownerInfo[0].state);
-                res.render("address.hbs",{
-                    state:user.ownerInfo[0].state,
-                    district:user.ownerInfo[0].district,
-                    town:user.ownerInfo[0].town,
-                    area:user.ownerInfo[0].area,
-                    address:user.ownerInfo[0].address,
-                    houseDescription:user.ownerInfo[0].houseDescription,
-                    contactNumber:user.ownerInfo[0].contactNumber
-                });        
+                    if(!user.ownerInfo[0])
+                    {
+                        res.sendFile(path.join(__dirname+'/public/noAddress.html'));
+                    }
+                    else{
+                        res.render("address.hbs",{
+                            state:user.ownerInfo[0].state,
+                            district:user.ownerInfo[0].district,
+                            town:user.ownerInfo[0].town,
+                            area:user.ownerInfo[0].area,
+                            address:user.ownerInfo[0].address,
+                            houseDescription:user.ownerInfo[0].houseDescription,
+                            contactNumber:user.ownerInfo[0].contactNumber
+                        });      
+                    }  
              }
         })
     }
@@ -299,9 +312,92 @@ app.get("/selectOption",(req,res)=>{
                 var area = req.body.area;
                User.findOne({'ownerInfo.state':state,'ownerInfo.district':district,'ownerInfo.town':town,'ownerInfo.area':area}).then((user)=>
                {
-                //    console.log(user.ownerInfo[0].contactNumber);
+                   if(!user)
+                   {
+                    res.sendFile(path.join(__dirname+'/public/noHomes.html'));
+                   }
+                   else{
+                       res.render("result.hbs",{
+                        firstName:user.firstName,
+                        lastName:user.lastName,
+                        email:user.email,
+                        state:user.ownerInfo[0].state,
+                        district:user.ownerInfo[0].district,
+                        town:user.ownerInfo[0].town,
+                        area:user.ownerInfo[0].area,
+                        address:user.ownerInfo[0].address,
+                        houseDescription:user.ownerInfo[0].houseDescription,
+                        contactNumber:user.ownerInfo[0].contactNumber,
+                        veg:user.ownerInfo[0].veg,
+                        shop:user.ownerInfo[0].shop,
+                        milk:user.ownerInfo[0].milk,
+                        grocery:user.ownerInfo[0].grocery,
+                        hospital:user.ownerInfo[0].hospital,
+                        cinema:user.ownerInfo[0].cinema,
+                        bus:user.ownerInfo[0].bus,
+                        rail:user.ownerInfo[0].rail,
+                        });
+                   }
+                                           
                })
             }
+        })
+    }
+    else{
+     res.sendFile(path.join(__dirname+'/public/login.html'));
+ 
+       }
+})
+
+app.get("/changePassword",(req,res)=>{
+    if(req.session && req.session.user)
+    {
+        User.findOne({email:req.session.user.email}).then((user)=>{
+            if(!user)
+            {
+                req.session.reset();
+                res.sendFile(path.join(__dirname+'/public/login.html'));
+             }
+            else{
+                 res.render("changePassword.hbs");           
+             }
+        })
+    }
+    else{
+     res.sendFile(path.join(__dirname+'/public/login.html'));
+ 
+       }
+})
+
+app.post("/newPassword",(req,res)=>{
+    if(req.session && req.session.user)
+    {
+        User.findOne({email:req.session.user.email}).then((user)=>{
+            if(!user)
+            {
+                req.session.reset();
+                res.sendFile(path.join(__dirname+'/public/login.html'));
+             }
+            else{
+                   var currentPassword = req.body.currentPassword;
+                   var newPassword = req.body.newPassword;
+                   bcrypt.compare(currentPassword,user.password,(err,result)=>{
+                    if(result===false)
+                    {
+                        res.status(400).sendFile(path.join(__dirname+'/public/invalidCurrentPassword.html'));
+                    }
+
+                    else{
+                        bcrypt.genSalt(10,(err,salt)=>{
+                            bcrypt.hash(newPassword,salt,(err,hash)=>{
+                                User.updateOne({email:user.email},{password : hash},(e,result)=>{
+                                    res.status(400).sendFile(path.join(__dirname+'/public/passwordChangeSuccess.html'));
+                                })
+                            })
+                        })
+                     }
+                })
+              }
         })
     }
     else{

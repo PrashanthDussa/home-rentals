@@ -23,7 +23,7 @@
     background-color:black;
     border-radius:10px;
     margin:auto;
-    color:orange;
+    color:white;
     text-align:center;
     font-family:cursive;
     position:absolute;
@@ -41,7 +41,7 @@
     background-color:black;
     border-radius:10px;
     margin:auto;
-    color:orange;
+    color:white;
     opacity:.8;
     text-align:center;
     font-family:cursive;
@@ -60,7 +60,7 @@
     border-radius:10px;
     margin:auto;
     opacity:.8;
-    color:orange;
+    color:white;
     text-align:center;
     font-family:cursive;
     position:absolute;
@@ -135,3 +135,6 @@
         -o-background-size: cover;
         background-size: cover;
       }
+    span{
+      color:orange;
+    }
