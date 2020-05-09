@@ -6,7 +6,7 @@
     border-radius:10px;
     margin:auto;
     padding:10px;
-    color:orange;
+    color:white;
     text-align:center;
     font-family:cursive;
     position:absolute;
@@ -23,7 +23,7 @@
     background-color:black;
     border-radius:10px;
     margin:auto;
-    color:orange;
+    color:white;
     text-align:center;
     font-family:cursive;
     opacity:.8;
@@ -56,3 +56,6 @@
         -o-background-size: cover;
         background-size: cover;
       }
+    span{
+      color:orange;
+    }
