@@ -8,7 +8,7 @@
    h2
     {
         font-size:40px;
-        width:500px;
+        width:50%;
         background-color:black;
         border-radius:20px;
         margin:auto;
@@ -42,7 +42,7 @@
 
     #button
     {
-        width:300px;
+        width:30%;
         font-size:20px;
         opacity:.8;
         color:white;
