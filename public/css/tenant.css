@@ -1,98 +1,88 @@
-h1{
-  text-align:center;
-  color:white;
+h1 {
+  text-align: center;
+  color: white;
   font-size: 25px;
-  }
-  h2{
-    color: orange;
-    font-size: 15px;
-    transform:translateX(18%) translateY(+50%);
-  }
-  h3{
-    color:white;
-    font-size: 15px;
-    transform:translateX(18%) translateY(+20%);
-  }
-  p
-  {
-  color:orange;
-  transform:translateX(10%) translateY(+50%);
-  }
-  #button
-  {
-  margin:40px auto 20px;
-  width:70%;
-  display:block;
-  outline:none;
-  padding:10px 0;
+}
+h2 {
+  color: orange;
+  font-size: 15px;
+  transform: translateX(18%) translateY(+50%);
+}
+h3 {
+  color: white;
+  font-size: 15px;
+  transform: translateX(18%) translateY(+20%);
+}
+p {
+  color: orange;
+  transform: translateX(10%) translateY(+50%);
+}
+#button {
+  margin: 40px auto 20px;
+  width: 70%;
+  display: block;
+  outline: none;
+  padding: 10px 0;
   border: ipx solid orange;
-  cursor:pointer;
-  background:transparent;
-  color:orange;
-  font-size:16px;
-  border-radius:10px;
-  transform:translateX(5%) translateY(+50%);
-  }
-  #button:hover
-  {
-  background-color:green;
-  }
-  .form-box
-  {
-  width:400px;
-  margin:auto;
-  background:black;
-  padding:20px;
-  border-radius:20px;
-  opacity:.8;
-  transform:translateX(0%) translateY(+25%);
-  }
-  html { 
-    background: url(back.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  p
-  {
-  color:orange;
-  transform:translateX(10%) translateY(+50%);
-  }
-  option
-  {
-   color:orange;
-  background-color:black;
-  }
-  select
-  {
-   background-color:black;
-  color:white;
-  width:200px;
-  height:25px;
-  border-radius:5px;
-  cursor:pointer;
-  }
-  .input-select
-  {
-  margin:10px auto;
-  width:80%;
-  padding-top:0.5px;
-  }
-  .input-box
-  {
-  margin:31px auto;
-  width:80%;
-  border-bottom:1px solid orange;
-  border-bottom-width:50%;
-  padding-top:5px;
-  transform:translateX(10%) translateY(+50%);
-  }
-  .input-box input
-  {
-    width:90%;
-  border:none;
-  outline:none;
-  background:transparent;
-  color:white;
-  }
+  cursor: pointer;
+  background: transparent;
+  color: orange;
+  font-size: 16px;
+  border-radius: 10px;
+  transform: translateX(5%) translateY(+50%);
+}
+#button:hover {
+  background-color: green;
+}
+.form-box {
+  width: 400px;
+  margin: auto;
+  background: black;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 0.8;
+  transform: translateX(0%) translateY(+25%);
+}
+html {
+  background: url(back.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p {
+  color: orange;
+  transform: translateX(10%) translateY(+50%);
+}
+option {
+  color: orange;
+  background-color: black;
+}
+select {
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.input-select {
+  margin: 10px auto;
+  width: 80%;
+  padding-top: 0.5px;
+}
+.input-box {
+  margin: 31px auto;
+  width: 80%;
+  border-bottom: 1px solid orange;
+  border-bottom-width: 50%;
+  padding-top: 5px;
+  transform: translateX(10%) translateY(+50%);
+}
+.input-box input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+}

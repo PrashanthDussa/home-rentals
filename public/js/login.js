@@ -1,31 +1,23 @@
-
-function myFunction()
-{
- var x=document.getElementById("myInput");
- var y=document.getElementById("hide1");
- var z=document.getElementById("hide2");
-if(x.type=='password')
-{
-x.type="text";
-y.style.display="block";
-z.style.display="none";
+function myFunction() {
+  var x = document.getElementById('myInput');
+  var y = document.getElementById('hide1');
+  var z = document.getElementById('hide2');
+  if (x.type == 'password') {
+    x.type = 'text';
+    y.style.display = 'block';
+    z.style.display = 'none';
+  } else {
+    x.type = 'password';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
 }
-else
-{
-x.type="password";
-y.style.display="none";
-z.style.display="block";
-}
-}
-
-// function sendValues()
 // {
 //     var email = document.getElementById("myEmail").value;
 //     var password = document.getElementById("myInput").value;
-    
+
 //     let user={email:email,password: password};
-    
-    
+
 //     fetch("/find-account",{
 //         method: "POST",
 //         headers:{
@@ -51,7 +43,7 @@ z.style.display="block";
 //         // alert(b.firstName);
 //         sessionStorage.token = token;
 //     })
-    
+
 // }
 
 // $(function()
@@ -73,7 +65,7 @@ z.style.display="block";
 //            else{
 //             window.location.assign("/selectOption.html");
 //            }
-        
+
 //        });
 //    })
 // })
