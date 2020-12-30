@@ -1,54 +1,66 @@
 <html>
-    <head>
-        <title>Houses for rent</title>
-        <style>
-            html { 
-                     background: url(/css/back.jpg) no-repeat center center fixed; 
-                     -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                     -o-background-size: cover;
-                     background-size: cover;
-                }
-             div{
-                 background-color:black;
-                 border-radius: 30px;
-                 opacity: .8;
-                 width: 50%;
-                 margin:auto;
-                 padding:10px;
-                 text-align:center;
-                 transform:translateX(0%) translateY(0%);
-             }
-             p{
-                 color: white;
-                 font-size:20px;
-                 font-family:cursive;
-             } 
-             span{
-                 color: orange;
-                 font-size:20px;
-                 font-family:cursive;
-             } 
-            
-        </style>
-            <link rel="icon" href="icon.png" type="image/png">
-    </head>
-    <body>
-        <div>
-            <p>Owner Name: <span>{{firstName}} {{lastName}}</span></p>
-            <p>Email: <span>{{email}}</span></p>
-            <p>State: <span>{{state}}</span></p>
-            <p>District: <span>{{district}}</span></p>
-            <p>Town: <span>{{town}}</span></p>
-            <p>Area: <span>{{area}}</span></p>
-            <p>Address: <span>{{address}}</span></p>
-            <p>House Description: <span>{{houseDescription}}</span></p>
-            <p>What's app Number: <span>{{contactNumber}}</span></p>
-            <p>Down below are the status of necessary places within a radius of 1km</p>
-            <p>Vegtable market: <span>{{veg}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shopping mall: <span>{{shop}}</span></p>
-            <p>Milk booth: <span>{{milk}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grocery store: <span>{{grocery}}</span></p>
-            <p>Hospital: <span>{{hospital}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cinema hall: <span>{{cinema}}</span></p>
-            <p>Bus stand: <span>{{bus}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Railway station: <span>{{rail}}</span></p>
-      </div>
-    </body>
+
+<head>
+    <title>Houses for rent</title>
+    <style>
+        html {
+            background: url(/css/back.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        div {
+            background-color: black;
+            border-radius: 30px;
+            opacity: .8;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            transform: translateX(0%) translateY(0%);
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        span {
+            color: orange;
+            font-size: 20px;
+            font-family: cursive;
+        }
+    </style>
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <div>
+        <p>Owner Name: <span>{{firstName}} {{lastName}}</span></p>
+        <p>Email: <span>{{email}}</span></p>
+        <p>State: <span>{{state}}</span></p>
+        <p>District: <span>{{district}}</span></p>
+        <p>Town: <span>{{town}}</span></p>
+        <p>Area: <span>{{area}}</span></p>
+        <p>Address: <span>{{address}}</span></p>
+        <p>House Description: <span>{{houseDescription}}</span></p>
+        <p>What's app Number: <span>{{contactNumber}}</span></p>
+        <p>Down below are the status of necessary places within a radius of 1km</p>
+        <p>Vegtable market: <span>{{veg}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shopping mall: <span>{{shop}}</span>
+        </p>
+        <p>Milk booth:
+            <span>{{milk}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grocery store:
+            <span>{{grocery}}</span></p>
+        <p>Hospital:
+            <span>{{hospital}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cinema
+            hall: <span>{{cinema}}</span></p>
+        <p>Bus stand:
+            <span>{{bus}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Railway
+            station: <span>{{rail}}</span></p>
+    </div>
+</body>
+
 </html>

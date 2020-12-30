@@ -1,19 +1,22 @@
 <html>
+
 <head>
-<title>Account Deatils</title>
-<link rel="stylesheet" href="/css/account.css">
+    <title>Account Deatils</title>
+    <link rel="stylesheet" href="/css/account.css">
     <link rel="icon" href="icon.png" type="image/png">
 </head>
+
 <body>
-<h1>{{email}}</h1>
-<h2>First Name: <span>{{firstName}}</span> </h2>
-<h3>Last Name: <span>{{lastName}}</span></h3>
-<h4>Mobile Number: <span>{{phoneNumber}}</span></h2>
-<form action="/changePassword" method="GET">
-<input type="submit" value="Change Password" id="button"/>
-</form>
-<form action="/getAddress" method="GET">
-    <input type="submit" value="MyAddresses" id="button1"/>
-    </form>
+    <h1>{{email}}</h1>
+    <h2>First Name: <span>{{firstName}}</span> </h2>
+    <h3>Last Name: <span>{{lastName}}</span></h3>
+    <h4>Mobile Number: <span>{{phoneNumber}}</span></h2>
+        <form action="/changePassword" method="GET">
+            <input type="submit" value="Change Password" id="button" />
+        </form>
+        <form action="/getAddress" method="GET">
+            <input type="submit" value="MyAddresses" id="button1" />
+        </form>
 </body>
+
 </html>

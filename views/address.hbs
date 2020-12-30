@@ -1,47 +1,53 @@
 <html>
-    <head>
-        <title>My Addresses</title>
-        <style>
-            html { 
-                     background: url(/css/back.jpg) no-repeat center center fixed; 
-                     -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                     -o-background-size: cover;
-                     background-size: cover;
-                }
-             div{
-                 background-color:black;
-                 border-radius: 30px;
-                 opacity: .8;
-                 width: 50%;
-                 margin:auto;
-                 padding:10px;
-                 text-align:center;
-                 transform:translateX(0%) translateY(30%);
-             }
-             p{
-                 color: white;
-                 font-size:20px;
-                 font-family:cursive;
-             } 
-             span{
-                 color: orange;
-                 font-size:20px;
-                 font-family:cursive;
-             }  
-        </style>
-            <link rel="icon" href="icon.png" type="image/png">
-    </head>
-    <body>
-        <div>
-            <p>State: <span>{{state}}</span></p>
-            <p>District: <span>{{district}}</span></p>
-            <p>Town: <span>{{town}}</span></p>
-            <p>Area: <span>{{area}}</span></p>
-            <p>Address: <span>{{address}}</span></p>
-            <p>House Description: <span>{{houseDescription}}</span></p>
-            <p>What's app Number: <span>{{contactNumber}}</span></p>
 
-        </div>
-    </body>
+<head>
+    <title>My Addresses</title>
+    <style>
+        html {
+            background: url(/css/back.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        div {
+            background-color: black;
+            border-radius: 30px;
+            opacity: .8;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            transform: translateX(0%) translateY(30%);
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        span {
+            color: orange;
+            font-size: 20px;
+            font-family: cursive;
+        }
+    </style>
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <div>
+        <p>State: <span>{{state}}</span></p>
+        <p>District: <span>{{district}}</span></p>
+        <p>Town: <span>{{town}}</span></p>
+        <p>Area: <span>{{area}}</span></p>
+        <p>Address: <span>{{address}}</span></p>
+        <p>House Description: <span>{{houseDescription}}</span></p>
+        <p>What's app Number: <span>{{contactNumber}}</span></p>
+
+    </div>
+</body>
+
 </html>
