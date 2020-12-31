@@ -1,99 +1,88 @@
-a:link{
-  color:white;
- text-decoration: solid;
-   }
- a:visited{
-   color:white;
- }
- a:hover{
-   color:orange;
- }
-h1{
-text-align:center;
-color:white;
-font-size: 25px;
+a:link {
+     color: white;
+     text-decoration: solid;
 }
-h2
-{
-color:orange;
-font-size:15px;
-transform:translateX(+70%) translateY(-150%);
+a:visited {
+     color: white;
 }
-p
-{
-color:orange;
-transform:translateX(10%) translateY(+50%);
+a:hover {
+     color: orange;
 }
-option
-{
- color:orange;
-background-color:black;
+h1 {
+     text-align: center;
+     color: white;
+     font-size: 25px;
 }
-select
-{
- background-color:black;
-color:white;
-width:200px;
-height:25px;
-border-radius:5px;
-cursor:pointer;
+h2 {
+     color: orange;
+     font-size: 15px;
+     transform: translateX(+70%) translateY(-150%);
 }
-#button
-{
-margin:40px auto 20px;
-width:80%;
-display:block;
-outline:none;
-padding:10px 0;
-border: ipx solid orange;
-cursor:pointer;
-background:transparent;
-color:orange;
-opacity:.8;
-font-size:16px;
-border-radius:10px;
+p {
+     color: orange;
+     transform: translateX(10%) translateY(+50%);
 }
-#button:hover
-{
-background-color:green;
+option {
+     color: orange;
+     background-color: black;
 }
-.form-box
-{
-width:400px;
-margin:auto;
-background:black;
-padding:20px;
-border-radius:20px;
-opacity:.8;
-transform:translateX(0%) translateY(0%);
+select {
+     background-color: black;
+     color: white;
+     width: 200px;
+     height: 25px;
+     border-radius: 5px;
+     cursor: pointer;
 }
-.input-box
-{
-margin:31px auto;
-width:80%;
-border-bottom:1px solid orange;
-padding-top:5px;
+#button {
+     margin: 40px auto 20px;
+     width: 80%;
+     display: block;
+     outline: none;
+     padding: 10px 0;
+     border: ipx solid orange;
+     cursor: pointer;
+     background: transparent;
+     color: orange;
+     opacity: 0.8;
+     font-size: 16px;
+     border-radius: 10px;
 }
-.input-box input
-{
-  width:90%;
-border:none;
-outline:none;
-background:transparent;
-color:white;
+#button:hover {
+     background-color: green;
 }
-html { 
-  background: url(back.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.form-box {
+     width: 400px;
+     margin: auto;
+     background: black;
+     padding: 20px;
+     border-radius: 20px;
+     opacity: 0.8;
+     transform: translateX(0%) translateY(0%);
 }
-.eye
-{
-position:absolute;
+.input-box {
+     margin: 31px auto;
+     width: 80%;
+     border-bottom: 1px solid orange;
+     padding-top: 5px;
 }
-#hide1
-{
-display:none;
+.input-box input {
+     width: 90%;
+     border: none;
+     outline: none;
+     background: transparent;
+     color: white;
+}
+html {
+     background: url(back.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+.eye {
+     position: absolute;
+}
+#hide1 {
+     display: none;
 }

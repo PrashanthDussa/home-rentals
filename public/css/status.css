@@ -1,63 +1,56 @@
-    h1
-    {
-    font-size:20px;
-    width:600px;
-    background-color:black;
-    border-radius:10px;
-    margin:auto;
-    padding:10px;
-    color:white;
-    text-align:center;
-    font-family:cursive;
-    opacity:.8;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translateX(-50%) translateY(-150%);
-    animation: text 3s 1;
-    }
-    
-    @keyframes text
-    {
-    0%
-    {
-    color:black;
-    }
-    35%
-    {
-    letter-spacing:3.5px;
-    }
-    85%
-    {
-    letter-spacing:0px;
-    }
-    }
-    #button
-    {
-    width:300px;
-    font-size:20px;
-    color:white;
-    height:50px;
-    opacity:.8;
-    border-radius:10px;
-    background-color:black;
-    text-align:center;
-    font-family:fantasy;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translateX(-56%) translateY(+150%);
-    }
-    
-    #button:hover
-    {
-    background-color:green;
-    cursor: pointer;
-    }
-    html { 
-        background: url(back.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
+h1 {
+     font-size: 20px;
+     width: 600px;
+     background-color: black;
+     border-radius: 10px;
+     margin: auto;
+     padding: 10px;
+     color: white;
+     text-align: center;
+     font-family: cursive;
+     opacity: 0.8;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-150%);
+     animation: text 3s 1;
+}
+
+@keyframes text {
+     0% {
+          color: black;
+     }
+     35% {
+          letter-spacing: 3.5px;
+     }
+     85% {
+          letter-spacing: 0px;
+     }
+}
+#button {
+     width: 300px;
+     font-size: 20px;
+     color: white;
+     height: 50px;
+     opacity: 0.8;
+     border-radius: 10px;
+     background-color: black;
+     text-align: center;
+     font-family: fantasy;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-56%) translateY(+150%);
+}
+
+#button:hover {
+     background-color: green;
+     cursor: pointer;
+}
+html {
+     background: url(back.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}

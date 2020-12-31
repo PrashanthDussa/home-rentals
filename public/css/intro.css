@@ -1,63 +1,63 @@
 html {
-  background: url(back.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+     background: url(back.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
 }
 
 h2 {
-  font-size: 40px;
-  width: 50%;
-  background-color: black;
-  border-radius: 20px;
-  margin: auto;
-  padding: 5px;
-  font-weight: bolder;
-  color: orange;
-  text-align: center;
-  font-family: fantasy;
-  position: absolute;
-  opacity: 0.8;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-53%) translateY(-380%);
-  animation: text 3s 10;
+     font-size: 40px;
+     width: 50%;
+     background-color: black;
+     border-radius: 20px;
+     margin: auto;
+     padding: 5px;
+     font-weight: bolder;
+     color: orange;
+     text-align: center;
+     font-family: fantasy;
+     position: absolute;
+     opacity: 0.8;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-53%) translateY(-380%);
+     animation: text 3s 10;
 }
 
 @keyframes text {
-  0% {
-    color: black;
-  }
+     0% {
+          color: black;
+     }
 
-  35% {
-    letter-spacing: 10px;
-  }
+     35% {
+          letter-spacing: 10px;
+     }
 
-  85% {
-    letter-spacing: 0px;
-  }
+     85% {
+          letter-spacing: 0px;
+     }
 }
 
 #button {
-  width: 35%;
-  font-size: 20px;
-  opacity: 0.8;
-  color: white;
-  height: 50px;
-  border-radius: 10px;
-  background-color: black;
-  text-align: center;
-  font-family: fantasy;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(+145%);
+     width: 35%;
+     font-size: 20px;
+     opacity: 0.8;
+     color: white;
+     height: 50px;
+     border-radius: 10px;
+     background-color: black;
+     text-align: center;
+     font-family: fantasy;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(+145%);
 }
 
 #button:hover {
-  background-color: green;
-  cursor: pointer;
+     background-color: green;
+     cursor: pointer;
 }
 
 /* body
