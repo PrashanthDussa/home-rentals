@@ -19,6 +19,9 @@ h3 {
           Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      transform: translateX(18%) translateY(+20%);
 }
+.checkbox:checked::before {
+     background-color: green;
+}
 p {
      color: orange;
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
