@@ -15,7 +15,7 @@ a:hover {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(-150%) translateY(+70%);
+     transform: translateX(-200%) translateY(+70%);
 }
 
 #button1:hover {
