@@ -15,7 +15,7 @@ a:hover {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(-135%) translateY(+70%);
+     transform: translateX(-120%) translateY(+40%);
 }
 
 #button1:hover {
@@ -35,7 +35,7 @@ a:hover {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(15%) translateY(+70%);
+     transform: translateX(20%) translateY(+40%);
 }
 
 #button2:hover {
@@ -48,16 +48,17 @@ ul {
      padding: 0;
      overflow: hidden;
      margin-left: -8px;
+     margin-right: -8px;
      background-color: black;
 }
 li {
      float: left;
-     font-size: 20px;
+     font-size: 15px;
      font-family: fantasy;
 }
 li a {
      display: block;
-     padding: 14px 10px;
+     padding: 14px 12px;
      color: white;
      text-align: center;
      text-decoration: none;
