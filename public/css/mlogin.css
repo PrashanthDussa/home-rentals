@@ -65,7 +65,7 @@ select {
      padding: 40px;
      border-radius: 20px;
      opacity: 0.8;
-     transform: translateX(20%) translateY(75%);
+     transform: translateX(30%) translateY(75%);
 }
 .input-box {
      margin: 31px auto;
