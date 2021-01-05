@@ -89,7 +89,7 @@ select {
      border-bottom: 1px solid orange;
      border-bottom-width: 30%;
      padding-top: 5px;
-     transform: translateX(10%) translateY(+50%);
+     transform: translateX(0%) translateY(+50%);
 }
 .input-box input {
      width: 90%;
