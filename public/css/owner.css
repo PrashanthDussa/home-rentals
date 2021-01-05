@@ -87,7 +87,7 @@ select {
      margin: 31px auto;
      width: 80%;
      border-bottom: 1px solid orange;
-     border-bottom-width: 50%;
+     border-bottom-width: 30%;
      padding-top: 5px;
      transform: translateX(10%) translateY(+50%);
 }
