@@ -3,10 +3,10 @@ a:hover {
 }
 
 #button1 {
-     width: 200px;
-     font-size: 40px;
+     width: 150px;
+     font-size: 20px;
      color: white;
-     height: 100px;
+     height: 50px;
      opacity: 0.8;
      border-radius: 15px;
      background-color: black;
@@ -23,11 +23,11 @@ a:hover {
      cursor: pointer;
 }
 #button2 {
-     width: 200px;
-     font-size: 40px;
+     width: 150px;
+     font-size: 20px;
      color: white;
      opacity: 0.8;
-     height: 100px;
+     height: 50px;
      border-radius: 15px;
      background-color: black;
      text-align: center;
@@ -46,6 +46,8 @@ ul {
      list-style-type: none;
      margin: 0;
      padding: 0;
+     width: 105;
+     margin-left: -8px;
      overflow: hidden;
      background-color: black;
 }
@@ -56,7 +58,7 @@ li {
 }
 li a {
      display: block;
-     padding: 14px 50px;
+     padding: 14px 15px;
      color: white;
      text-align: center;
      text-decoration: none;
