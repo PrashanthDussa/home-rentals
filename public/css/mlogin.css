@@ -59,13 +59,13 @@ select {
      background-color: green;
 }
 .form-box {
-     width: 90%;
+     width: 100%;
      margin: auto;
      background: black;
      padding: 40px;
      border-radius: 20px;
      opacity: 0.8;
-     transform: translateX(10%) translateY(100%);
+     transform: translateX(15%) translateY(100%);
 }
 .input-box {
      margin: 31px auto;
