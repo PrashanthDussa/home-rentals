@@ -1,0 +1,80 @@
+a:hover {
+     color: orange;
+}
+
+#button1 {
+     width: 150px;
+     font-size: 20px;
+     color: white;
+     height: 50px;
+     opacity: 0.8;
+     border-radius: 15px;
+     background-color: black;
+     text-align: center;
+     font-family: fantasy;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-120%) translateY(+40%);
+}
+
+#button1:hover {
+     background-color: orange;
+     cursor: pointer;
+}
+#button2 {
+     width: 150px;
+     font-size: 20px;
+     color: white;
+     opacity: 0.8;
+     height: 50px;
+     border-radius: 15px;
+     background-color: black;
+     text-align: center;
+     font-family: fantasy;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(20%) translateY(+40%);
+}
+
+#button2:hover {
+     background-color: green;
+     cursor: pointer;
+}
+ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     margin-left: -8px;
+     margin-right: -8px;
+     margin-top: -12px;
+     background-color: black;
+}
+li {
+     float: left;
+     font-size: 15px;
+     font-family: fantasy;
+}
+li a {
+     display: block;
+     padding: 14px 21px;
+     color: white;
+     text-align: center;
+     text-decoration: none;
+}
+li a:visited {
+     color: white;
+}
+li a:hover {
+     color: orange;
+}
+html {
+     background: url(back.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     overflow: hidden;
+}
