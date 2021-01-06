@@ -23,13 +23,13 @@ h2 {
 }
 
 #button {
-     width: 30%;
+     width: 40%;
      font-size: 20px;
      opacity: 0.8;
      color: white;
      height: 50px;
      border-width: 2px;
-     border-radius: 5px;
+     border-radius: 10px;
      border-color: white;
      background-color: black;
      text-align: center;
