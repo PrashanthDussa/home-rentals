@@ -7,7 +7,7 @@ html {
 }
 
 h2 {
-     font-size: 40px;
+     font-size: 50px;
      width: 50%;
      margin: auto;
      padding: 5px;
@@ -20,21 +20,6 @@ h2 {
      top: 50%;
      left: 50%;
      transform: translateX(-53%) translateY(-380%);
-     animation: text 3s 10;
-}
-
-@keyframes text {
-     0% {
-          color: black;
-     }
-
-     35% {
-          letter-spacing: 10px;
-     }
-
-     85% {
-          letter-spacing: 0px;
-     }
 }
 
 #button {
