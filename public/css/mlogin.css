@@ -59,8 +59,8 @@ select {
      background-color: green;
 }
 .form-box {
-     width: 100%;
-/*      margin: auto; */
+     width: 400px;
+     margin: auto;
      background: black;
      padding: 40px;
      border-radius: 20px;
