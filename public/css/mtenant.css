@@ -16,13 +16,13 @@ p {
      width: 80%;
      display: block;
      outline: none;
-     padding: 10px 0;
+     padding: 10px 10px 20px 10px;
      cursor: pointer;
      background: transparent;
      color: white;
      font-size: 18px;
      border-radius: 10px;
-     transform: translateX(5%) translateY(+50%);
+     transform: translateX(0%) translateY(+50%);
 }
 #button:hover {
      background-color: green;
