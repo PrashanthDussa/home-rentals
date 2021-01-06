@@ -34,7 +34,7 @@ p {
      padding: 15px;
      border-radius: 20px;
      opacity: 0.8;
-     transform: translateX(10%) translateY(+25%);
+     transform: translateX(5%) translateY(+25%);
 }
 html {
      background: url(back.png) no-repeat center center fixed;
