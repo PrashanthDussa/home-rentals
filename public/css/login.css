@@ -8,20 +8,17 @@ a:visited {
 a:hover {
      color: orange;
 }
-.fa fa-envelope{
+
+#myEmail {
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+     font-size: 25px;
+}
+#myInput {
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+     font-size: 25px;
+}
+i {
      color: orange;
-     font-size: 25px;
-}
-.fa fa-key{
-     color:orange;
-     font-size: 25px;
-}
-#myEmail{
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-     font-size: 20px;
-}
-#myInput{
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
      font-size: 20px;
 }
 h1 {
