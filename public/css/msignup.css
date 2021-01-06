@@ -59,7 +59,7 @@ select {
      background-color: green;
 }
 .form-box {
-     width: 400px;
+     width: 100%;
      margin: auto;
      background: black;
      padding: 20px;
