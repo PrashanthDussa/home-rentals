@@ -1,0 +1,48 @@
+html {
+     background: url(back.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+h2 {
+     font-size: 70px;
+     width: 50%;
+     margin: auto;
+     padding: 5px;
+     font-weight: bolder;
+     color: white;
+     text-align: center;
+     font-family: Verdana, sans-serif;
+     position: absolute;
+     opacity: 0.8;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-49%) translateY(-500%);
+}
+
+#button {
+     width: 60%;
+     font-size: 30px;
+     opacity: 0.8;
+     color: white;
+     height: 50px;
+     border-width: 2px;
+     border-radius: 5px;
+     border-color: white;
+     background-color: black;
+     text-align: center;
+     font-family: Verdana, sans-serif;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(+145%);
+}
+
+#button:hover {
+     background-color: green;
+     cursor: pointer;
+}
+
+
