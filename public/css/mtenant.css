@@ -13,14 +13,14 @@ p {
 }
 #button {
      margin: 40px auto 20px;
-     width: 70%;
+     width: 80%;
      display: block;
      outline: none;
      padding: 10px 0;
      cursor: pointer;
      background: transparent;
-     color: orange;
-     font-size: 20px;
+     color: white;
+     font-size: 18px;
      border-radius: 10px;
      transform: translateX(5%) translateY(+50%);
 }
@@ -28,7 +28,7 @@ p {
      background-color: green;
 }
 .form-box {
-     width: 90%;
+     width: 80%;
      margin: auto;
      background: black;
      padding: 20px;
