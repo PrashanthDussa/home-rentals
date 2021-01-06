@@ -60,22 +60,8 @@ select {
      cursor: pointer;
 }
 .input-select {
-     margin: 10px auto;
+     margin: 10px;
      width: 80%;
      padding-top: 0.5px;
 }
-.input-box {
-     margin: 31px auto;
-     width: 80%;
-     border-bottom: 1px solid orange;
-     border-bottom-width: 50%;
-     padding-top: 5px;
-     transform: translateX(10%) translateY(+50%);
-}
-.input-box input {
-     width: 90%;
-     border: none;
-     outline: none;
-     background: transparent;
-     color: white;
-}
+
