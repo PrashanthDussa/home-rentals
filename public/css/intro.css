@@ -9,14 +9,12 @@ html {
 h2 {
      font-size: 40px;
      width: 50%;
-     background-color: black;
-     border-radius: 20px;
      margin: auto;
      padding: 5px;
      font-weight: bolder;
      color: orange;
      text-align: center;
-     font-family: fantasy;
+     font-family: Verdana, sans-serif;
      position: absolute;
      opacity: 0.8;
      top: 50%;
