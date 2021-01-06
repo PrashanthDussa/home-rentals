@@ -28,10 +28,11 @@ h2 {
      opacity: 0.8;
      color: white;
      height: 50px;
-     border-radius: 10px;
+     border-width: 2px;
+     border-color: white;
      background-color: black;
      text-align: center;
-     font-family: fantasy;
+     font-family: Verdana, sans-serif;
      position: absolute;
      top: 50%;
      left: 50%;
