@@ -7,7 +7,7 @@ html {
 }
 
 h2 {
-     font-size: 35px;
+     font-size: 32px;
      margin: auto;
      padding: 5px;
      font-weight: bolder;
@@ -18,7 +18,7 @@ h2 {
      opacity: 0.8;
      top: 50%;
      left: 50%;
-     transform: translateX(-49%) translateY(-420%);
+     transform: translateX(-49%) translateY(-400%);
 }
 
 #button {
@@ -36,7 +36,7 @@ h2 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(-50%) translateY(+120%);
+     transform: translateX(-50%) translateY(+100%);
 }
 
 #button:hover {
