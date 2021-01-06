@@ -9,6 +9,9 @@ html {
 h2 {
      font-size: 50px;
      width: 50%;
+     background-color: black;
+     border-radius: 10px;
+     border-color: white;
      margin: auto;
      padding: 5px;
      font-weight: bolder;
