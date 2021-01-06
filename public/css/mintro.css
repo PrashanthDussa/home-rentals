@@ -7,7 +7,7 @@ html {
 }
 
 h2 {
-     font-size: 32px;
+     font-size: 30px;
      margin: auto;
      padding: 5px;
      font-weight: bolder;
@@ -18,7 +18,7 @@ h2 {
      opacity: 0.8;
      top: 50%;
      left: 50%;
-     transform: translateX(-49%) translateY(-400%);
+     transform: translateX(-49%) translateY(-380%);
 }
 
 #button {
