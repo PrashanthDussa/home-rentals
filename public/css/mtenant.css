@@ -30,7 +30,7 @@ p {
 .form-box {
      width: 85%;
      margin: auto;
-     margin-left: -1px;
+     margin-left: -0.5px;
      background: black;
      padding: 15px;
      border-radius: 20px;
