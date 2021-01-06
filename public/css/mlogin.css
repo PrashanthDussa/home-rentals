@@ -90,6 +90,14 @@ select {
 .eye2 {
      position: absolute;
 }
+.fa fa-envelope{
+     color: orange;
+     font-size: 25px;
+}
+.fa fa-key{
+     color:orange;
+     font-size: 25px;
+}
 #hide1 {
      display: none;
 }
