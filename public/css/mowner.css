@@ -49,7 +49,6 @@ p {
 }
 .form-box {
      width: 100vw;
-     margin: auto;
      background: black;
      padding: 20px;
      border-radius: 20px;
@@ -87,8 +86,7 @@ select {
 }
 .input-box {
      margin: 31px auto;
-     width: 60%;
-     border-bottom: 1px solid orange;
+     width: 80;
      border-bottom-width: 30%;
      padding-top: 5px;
      transform: translateX(-3%) translateY(+50%);
