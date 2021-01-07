@@ -12,7 +12,7 @@ h2 {
      background-color: black;
      margin: auto;
      padding: 5px 5px 10px 5px;
-     border: 3px solid black;
+     border: 5px solid orange;
      font-weight: bolder;
      color: white;
      text-align: center;
@@ -22,7 +22,7 @@ h2 {
      opacity: 0.4;
      top: 50%;
      left: 50%;
-     transform: translateX(-49%) translateY(-350%);
+     transform: translateX(-49%) translateY(-310%);
      animation: text 3s 1;
 }
 @keyframes text {
