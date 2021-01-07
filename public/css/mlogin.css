@@ -90,7 +90,7 @@ select {
      background: transparent;
      color: white;
 }
-. input-box input:focus{
+ input:focus{
      border: 1.7px solid green;
 }
 
