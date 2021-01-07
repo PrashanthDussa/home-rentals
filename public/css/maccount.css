@@ -99,8 +99,9 @@ h4 {
      transform: translateX(1%) translateY(+370%);
 }
 #button1 {
-     width: 45vw;
+     width: 40vw;
      font-size: 20px;
+     font-weight: bold;
      color: white;
      height: 50px;
      opacity: 0.8;
