@@ -71,6 +71,7 @@ select {
      margin: auto;
      background: black;
      padding: 60px;
+     border: 5px solid white;
      border-radius: 20px;
      opacity: 0.8;
      transform: translateX(37%) translateY(75%);
