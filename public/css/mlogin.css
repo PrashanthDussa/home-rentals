@@ -62,7 +62,7 @@ select {
      opacity: 0.8;
      font-size: 30px;
      border-radius: 10px;
-     border: 3px solid white;
+     border: 3px solid orange;
 }
 #button:hover {
      background-color: green;
