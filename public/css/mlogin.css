@@ -73,7 +73,7 @@ select {
      background-image: url('back.png');
      padding: 60px;
      border-radius: 20px;
-     opacity: 0.8;
+     opacity: 1;
      transform: translateX(37%) translateY(75%);
 }
 .input-box {
