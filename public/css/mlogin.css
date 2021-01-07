@@ -86,7 +86,7 @@ select {
      outline: none;
      border: 1.7px solid orange;
      border-radius: 5px;
-     padding: 12px;
+     padding-left: 15px;
      background: transparent;
      color: white;
 }
