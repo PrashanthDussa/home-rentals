@@ -70,7 +70,7 @@ select {
 .form-box {
      width: 100%;
      margin: auto;
-     background: black;
+     background-image: url('back.png');
      padding: 60px;
      border-radius: 20px;
      opacity: 0.8;
