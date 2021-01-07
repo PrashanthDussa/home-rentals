@@ -8,7 +8,9 @@ html {
 body {
      margin: 0;
 }
-
+video{
+     display: none;
+}
 
 h2 {
      font-size: 32px;
