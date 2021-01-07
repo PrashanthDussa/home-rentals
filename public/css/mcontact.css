@@ -15,6 +15,7 @@ h1 {
      top: 50%;
      left: 50%;
      transform: translateX(-50%) translateY(-500%);
+     animation: text 3s 1;
 }
 h2 {
      font-size: 20px;
@@ -32,6 +33,18 @@ h2 {
      top: 50%;
      left: 50%;
      transform: translateX(-50%) translateY(-300%);
+     animation: text 3s 1
+}
+@keyframes text {
+     0% {
+          color: black;
+     }
+     35% {
+          letter-spacing: 2px;
+     }
+     85% {
+          letter-spacing: 0px;
+     }
 }
 
 html {
