@@ -84,6 +84,7 @@ h4 {
 #button {
      width: 45vw;
      font-size: 20px;
+     font-weight: bold;
      color: white;
      height: 50px;
      opacity: 0.8;
