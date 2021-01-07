@@ -13,7 +13,7 @@ h1 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(-50%) translateY(-450%);
+     transform: translateX(-50%) translateY(-500%);
      animation: text 3s 1;
 }
 h2 {
@@ -31,7 +31,7 @@ h2 {
      opacity: 0.8;
      top: 50%;
      left: 50%;
-     transform: translateX(-50%) translateY(-250%);
+     transform: translateX(-50%) translateY(-300%);
      animation: text 3s 1;
 }
 h3 {
@@ -49,7 +49,7 @@ h3 {
      padding: 10px;
      top: 50%;
      left: 50%;
-     transform: translateX(-50%) translateY(-50%);
+     transform: translateX(-50%) translateY(-100%);
      animation: text 3s 1;
 }
 h4 {
@@ -67,7 +67,7 @@ h4 {
      padding: 10px;
      top: 50%;
      left: 50%;
-     transform: translateX(-50%) translateY(+150%);
+     transform: translateX(-50%) translateY(+100%);
      animation: text 3s 1;
 }
 @keyframes text {
@@ -94,7 +94,7 @@ h4 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(1%) translateY(+420%);
+     transform: translateX(1%) translateY(+370%);
 }
 #button1 {
      width: 45vw;
@@ -109,7 +109,7 @@ h4 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(-100%) translateY(+420%);
+     transform: translateX(-100%) translateY(+370%);
 }
 
 #button:hover {
