@@ -84,6 +84,9 @@ select {
      width: 90%;
      border: none;
      outline: none;
+     border: 3px solid orange;
+     border-radius: 5px;
+     padding: 2px;
      background: transparent;
      color: white;
 }
