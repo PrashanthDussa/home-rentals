@@ -67,7 +67,8 @@ select {
      background-color: green;
 }
 .form-box {
-     width: 100%;
+     width: 80vh;
+     height: 50vh;
      margin: auto;
      background: black;
      padding: 60px;
