@@ -48,12 +48,12 @@ p {
      background-color: green;
 }
 .form-box {
-     width: 100vw;
+     width: 90vw;
      background: black;
-     padding: 20px;
+     padding: 10px;
      border-radius: 20px;
      opacity: 0.9;
-     transform: translateX(10%) translateY(+10%);
+     transform: translateX(5%) translateY(+5%);
 }
 html {
      background: url(back.png) no-repeat center center fixed;
