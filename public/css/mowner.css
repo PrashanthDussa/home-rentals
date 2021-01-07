@@ -53,7 +53,7 @@ p {
      padding: 10px;
      border-radius: 20px;
      opacity: 0.9;
-     transform: translateX(5%) translateY(+5%);
+     transform: translateX(6%) translateY(+2%);
 }
 html {
      background: url(back.png) no-repeat center center fixed;
@@ -80,7 +80,7 @@ select {
      cursor: pointer;
 }
 .input-select {
-     margin: 10px auto;
+     margin: 5px auto;
      width: 80%;
      padding-top: 0.5px;
 }
