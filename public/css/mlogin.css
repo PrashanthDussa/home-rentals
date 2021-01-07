@@ -73,7 +73,7 @@ select {
      background: black;
      padding: 60px;
      border-radius: 20px;
-     opacity: 0.8;
+     opacity: 0.5;
      transform: translateX(37%) translateY(75%);
 }
 .input-box {
