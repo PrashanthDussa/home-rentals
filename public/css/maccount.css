@@ -82,7 +82,7 @@ h4 {
      }
 }
 #button {
-     width: 200vw;
+     width: 50vw;
      font-size: 20px;
      color: white;
      height: 50px;
@@ -97,7 +97,7 @@ h4 {
      transform: translateX(1%) translateY(+420%);
 }
 #button1 {
-     width: 200vw;
+     width: 50vw;
      font-size: 20px;
      color: white;
      height: 50px;
