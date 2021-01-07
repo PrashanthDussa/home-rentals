@@ -57,7 +57,7 @@ select {
      display: block;
      outline: none;
      padding: 10px 0;
-     border: 1px solid white;
+     border: 3px solid white;
      cursor: pointer;
      background: transparent;
      color: white;
