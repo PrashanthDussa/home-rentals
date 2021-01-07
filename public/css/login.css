@@ -86,10 +86,11 @@ select {
 }
 .input-box input {
      width: 90%;
-     border: 2px solid white;
+     border: 2px solid orange;
      border-radius: 5px;
      outline: none;
-     background: transparent;
+     background: black;
+     opacity: 0.8;
      color: white;
 }
 html {
