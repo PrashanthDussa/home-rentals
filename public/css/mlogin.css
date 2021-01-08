@@ -82,10 +82,10 @@ h2 {
 }
 #button {
      width: 50%;
-     background-color: black;
+     background-color: gray;
      color: white;
      padding: 2px;
-     border: 3px solid orange;
+     border: 3px solid white;
      border-radius: 6px;
      text-align: center;
      margin-bottom: 28px;
