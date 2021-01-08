@@ -29,16 +29,7 @@ html {
 }
 .login-box {
      float: left;
-     width: 70%;
-}
-.signup-box {
-     float: left;
-     width: 30%;
-     text-align: left;
-     border-radius: 0 30px 30px 0;
-}
-.child {
-     transform: translateX(0%) translateY(128%);
+     width: 100%;
 }
 h1 {
      font-family: "Poppins";
