@@ -11,7 +11,7 @@ html {
 }
 .container {
      width: 80%;
-     height: 50vh;
+     height: 40vh;
      background-image: url("formBack.jpg");
      border-radius: 30px;
      padding: 0 0 0 30px;
@@ -21,7 +21,7 @@ html {
      background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
-     transform: translateY(20%);
+     transform: translateY(10%);
 }
 .container::after {
      content: "";
