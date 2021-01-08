@@ -4,9 +4,9 @@ a:hover {
 a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Poppins";
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 body {
      margin: 0;
