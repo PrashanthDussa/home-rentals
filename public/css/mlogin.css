@@ -35,8 +35,6 @@ html {
      float: left;
      width: 30%;
      text-align: center;
-     background-color: black;
-     opacity: 0.7;
      border-radius: 0 30px 30px 0;
 }
 .child {
