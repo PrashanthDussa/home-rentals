@@ -38,7 +38,7 @@ html {
      border-radius: 0 30px 30px 0;
 }
 .child {
-     transform: translateX(0%) translateY(100%);
+     transform: translateX(0%) translateY(125%);
 }
 h1 {
      font-family: "Poppins";
@@ -55,7 +55,7 @@ h2 {
      letter-spacing: 1px;
 }
 
-.input-box input[type="email"] {
+.input-box input {
      padding: 5px 5px 5px 30px;
      border-radius: 5px;
      border: 3px solid white;
@@ -65,34 +65,8 @@ h2 {
      background: black;
      width: 70%;
 }
-.input-box input[type="email"]:focus {
+.input-box input:focus {
      border: 3px solid green;
-}
-.input-box input[type="password"]:focus {
-     border: 3px solid green;
-}
-.input-box input[type="text"]:focus {
-     border: 3px solid green;
-}
-.input-box input[type="password"] {
-     padding: 5px 5px 5px 30px;
-     border-radius: 5px;
-     border: 3px solid white;
-     font-family: "Poppins";
-     font-size: 14px;
-     color: white;
-     background: black;
-     width: 70%;
-}
-.input-box input[type="text"] {
-     padding: 5px 5px 5px 30px;
-     border-radius: 5px;
-     border: 3px solid white
-     font-family: "Poppins";
-     font-size: 14px;
-     color: white;
-     background: black;
-     width: 70%;
 }
 
 .input-box i {
