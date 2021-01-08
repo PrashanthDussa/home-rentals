@@ -20,15 +20,15 @@ html {
 }
 .container {
      width: 80%;
-     background-image: url("formBack.jpg");
      border-radius: 30px;
      padding: 0 20px 0 20px;
      margin: auto;
      opacity: 0.8;
+     background: url(formBack.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
      background-size: cover;
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
      transform: translateY(50%);
 }
 .container::after {
@@ -62,7 +62,7 @@ h2 {
      font-family: "Poppins";
      font-size: 12px;
      color: white;
-     background: black;
+     background: transparent;
      width: 70%;
 }
 .input-box input:focus {
