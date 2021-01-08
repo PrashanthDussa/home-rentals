@@ -65,7 +65,7 @@ h2 {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     background: black;
+     background: transparent;
      width: 75%;
 }
 .input-box input[type="email"]:focus {
