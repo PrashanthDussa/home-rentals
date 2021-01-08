@@ -69,13 +69,13 @@ h2 {
      width: 75%;
 }
 .input-box input[type="email"]:focus {
-     border: 3px solid lightseagreen;
+     border: 3px solid green;
 }
 .input-box input[type="password"]:focus {
-     border: 3px solid lightseagreen;
+     border: 3px solid green;
 }
 .input-box input[type="text"]:focus {
-     border: 3px solid lightseagreen;
+     border: 3px solid green;
 }
 .input-box input[type="password"] {
      padding: 5px 5px 5px 30px;
@@ -83,7 +83,7 @@ h2 {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     background: black;
+     background: transparent;
      width: 75%;
 }
 .input-box input[type="text"] {
@@ -92,7 +92,7 @@ h2 {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     background: black;
+     background: transparent;
      width: 75%;
 }
 
@@ -112,7 +112,7 @@ h2 {
      height: 6vh;
      background-color: black;
      color: white;
-     padding: 4px;
+     padding: 4px 4px 7px 4px;
      border: 3px solid orange;
      border-radius: 12px;
      text-align: center;
@@ -126,9 +126,9 @@ h2 {
      height: 4vh;
      background-color: black;
      color: white;
-     padding: 4px;
+     padding: 4px 4px 7px 4px;
      border: 3px solid orange;
-     border-radius: 12px;
+     border-radius: 8px;
      text-align: center;
      font-family: "Poppins";
      font-size: 13px;
