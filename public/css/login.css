@@ -10,8 +10,8 @@ html {
      background-size: cover;
 }
 .container {
-     width: 80%;
-     height: 30vh;
+     width: 40%;
+     height: 65vh;
      background-image: url("formBack.jpg");
      border-radius: 30px;
      padding: 0 0 0 30px;
