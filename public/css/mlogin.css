@@ -34,7 +34,7 @@ html {
 .signup-box {
      float: left;
      width: 30%;
-     text-align: center;
+     text-align: left;
      border-radius: 0 30px 30px 0;
 }
 .child {
@@ -107,21 +107,20 @@ h2 {
      width: 50%;
      background-color: black;
      color: white;
-     padding: 4px;
+     padding: 2px;
      border: 3px solid orange;
      border-radius: 12px;
      text-align: center;
      margin-bottom: 30px;
      font-family: "Poppins";
-     font-size: 18px;
+     font-size: 16px;
      letter-spacing: 1px;
 }
 #button1 {
      width: 70%;
-     height: 4vh;
      background-color: black;
      color: white;
-     padding: 4px;
+     padding: 2px;
      border: 3px solid orange;
      border-radius: 12px;
      text-align: center;
