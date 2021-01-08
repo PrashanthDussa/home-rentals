@@ -1,12 +1,18 @@
 
 body {
-     background-color: orange;
      margin: 0;
+}
+html {
+     background: url(back.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
 }
 .container {
      width: 40%;
      height: 65vh;
-     background-image: url("back.jpg");
+     background-image: url("formBack.jpg");
      border-radius: 30px;
      padding: 0 0 0 30px;
      margin: auto;
