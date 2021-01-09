@@ -44,14 +44,13 @@ select {
 .container {
      width: 100%;
      padding:  20px 20px 30px 30px;
-     margin-bottom: -30px;
      opacity: 0.8;
      background: url(formBack.jpg) no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
-/*      transform: translateY(15%); */
+     transform: translateY(3%);
 }
 
 h1 {
