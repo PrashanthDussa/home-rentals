@@ -52,6 +52,7 @@ select {
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
+     transform: translateY(15%);
 }
 
 h1 {
