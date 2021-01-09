@@ -24,10 +24,9 @@ a {
      text-decoration: none;
 }
 .container {
-     width: 40%;
+     width: 50%;
      background-image: url("formBack.jpg");
      padding: 30px 30px 30px 60px;
-/*      margin: auto; */
      position: absolute;
      right: 0;
      opacity: 0.8;
