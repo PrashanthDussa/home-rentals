@@ -93,10 +93,10 @@ select:focus {
      position: absolute;
 }
 #button {
-     width: 37%;
+     width: 40%;
      background-color: black;
      color: white;
-     padding: 7px;
+     padding: 5px;
      border: 3px solid orange;
      border-radius: 12px;
      text-align: center;
