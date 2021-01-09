@@ -24,7 +24,7 @@ html {
 .container {
      width: 80%;
      border-radius: 30px;
-     padding: 0 20px 0 20px;
+     padding:  20px;
      margin: auto;
      opacity: 0.8;
      background: url(formBack.jpg) no-repeat center center fixed;
@@ -44,7 +44,6 @@ h1 {
      font-size: 20px;
      color: white;
      text-align: center;
-     margin-top: 20px;
      letter-spacing: 1px;
 }
 h2 {
@@ -88,7 +87,6 @@ h2 {
      border: 3px solid white;
      border-radius: 6px;
      text-align: center;
-     margin-bottom: 28px;
      font-family: "Poppins";
      font-size: 16px;
      letter-spacing: 1px;
