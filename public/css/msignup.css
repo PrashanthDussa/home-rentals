@@ -47,7 +47,7 @@ select {
 .container {
      width: 90%;
      border-radius: 30px;
-     /*height: 100vh;*/
+     height: 100%;
      padding:  20px 20px 30px 30px;
      opacity: 0.8;
      background: url(formBack.png) no-repeat center center fixed;
