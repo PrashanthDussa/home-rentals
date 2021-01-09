@@ -55,6 +55,7 @@ select {
 
 h1 {
      font-family: "Poppins";
+     position: fixed;
      font-size: 20px;
      color: white;
      text-align: center;
