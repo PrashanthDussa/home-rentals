@@ -27,7 +27,7 @@ a {
      width: 40%;
      background-image: url("formBack.jpg");
      padding: 30px 30px 30px 60px;
-     margin: auto;
+/*      margin: auto; */
      right: 0;
      opacity: 0.8;
      background-size: cover;
