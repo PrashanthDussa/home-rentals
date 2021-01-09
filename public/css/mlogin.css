@@ -39,10 +39,6 @@ html {
      display: table;
      clear: both;
 }
-.login-box {
-     float: left;
-     width: 100%;
-}
 h1 {
      font-family: "Poppins";
      font-size: 20px;
