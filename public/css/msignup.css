@@ -14,8 +14,9 @@ a {
     font-family: "Poppins";
     letter-spacing: 0.5px;
 }
-body {
+html, body {
      margin: 0;
+     padding: 0;
 }
 html {
      background: url(back.png) no-repeat center center fixed;
