@@ -41,9 +41,9 @@ select {
      cursor: pointer;
 }
 .container {
-     width: 80%;
+     width: 100%;
      padding:  20px 20px 30px 30px;
-     margin: auto;
+     margin: 0;
      opacity: 0.8;
      background: url(formBack.jpg) no-repeat center center fixed;
      -webkit-background-size: cover;
