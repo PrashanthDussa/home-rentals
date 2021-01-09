@@ -1,8 +1,11 @@
 body {
      margin: 0;
 }
+* {
+     box-sizing: border-box;
+}
 ::placeholder{
-     color: orange;
+     color: black;
 }
 html {
      background: url(back.png) no-repeat center center fixed;
