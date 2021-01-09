@@ -25,11 +25,13 @@ html {
      background-size: cover;
 }
 .container {
-     width: 30%;
+     width: 50%;
+     height: 100vh;
      background-image: url("formBack.jpg");
      border-radius: 30px;
      padding: 30px;
-     margin: auto;
+     position: absolute;
+     right: 0;
      opacity: 0.8;
      background-size: cover;
      background-attachment: fixed;
