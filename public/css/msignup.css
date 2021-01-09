@@ -43,6 +43,7 @@ select {
 }
 .container {
      width: 100%;
+     position: relative;
      padding:  20px 20px 30px 30px;
      opacity: 0.8;
      background: url(formBack.jpg) no-repeat center center fixed;
@@ -55,7 +56,6 @@ select {
 
 h1 {
      font-family: "Poppins";
-     position: fixed;
      font-size: 20px;
      color: white;
      text-align: center;
