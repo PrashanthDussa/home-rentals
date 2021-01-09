@@ -59,7 +59,7 @@ h2 {
      font-size: 14px;
      color: white;
      background: transparent;
-     width: 75%;
+     width: 85%;
 }
 .input-box input:focus {
      border: 3px solid green;
@@ -77,7 +77,7 @@ h2 {
      position: absolute;
 }
 #button {
-     width: 37%;
+     width: 40%;
      background-color: black;
      color: white;
      padding: 4px 4px 7px 4px;
