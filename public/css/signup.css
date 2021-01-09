@@ -47,7 +47,8 @@ h2 {
 }
 option {
      color: orange;
-     background: transparent;
+     background: black;
+     opacity: 0.8;
 }
 select {
      background-color: black;
@@ -71,7 +72,8 @@ select:focus {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     background: transparent;
+     background: black;
+     opacity: 0.8;
      width: 75%;
 }
 .input-box input:focus {
