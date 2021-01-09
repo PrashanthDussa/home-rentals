@@ -1,5 +1,8 @@
 ::placeholder{
-     color: orange;
+     color: black;
+}
+* {
+     box-sizing: content-box;
 }
 body {
      margin: 0;
@@ -47,8 +50,7 @@ h2 {
 }
 option {
      color: orange;
-     background: black;
-     opacity: 0.8;
+     background: transparent;
 }
 select {
      background-color: black;
@@ -72,8 +74,7 @@ select:focus {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     background: black;
-     opacity: 0.8;
+     background: transparent;
      width: 75%;
 }
 .input-box input:focus {
