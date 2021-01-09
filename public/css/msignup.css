@@ -1,11 +1,21 @@
-body {
-     margin: 0;
+::placeholder {
+     color: black;
 }
 * {
      box-sizing: border-box;
 }
-::placeholder{
-     color: black;
+a:hover {
+     color: orange;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Poppins";
+    letter-spacing: 0.5px;
+}
+body {
+     margin: 0;
 }
 html {
      background: url(back.png) no-repeat center center fixed;
@@ -14,70 +24,41 @@ html {
      -o-background-size: cover;
      background-size: cover;
 }
-a:hover {
-     color: orange;
-}
-a {
-     color: white;
-     font-family: "Poppins";
-     font-size: 15px;
-     text-decoration: none;
-}
 .container {
-     width: 30%;
-     background-image: url("formBack.jpg");
-     padding: 30px;
+     width: 80%;
+     padding:  20px 20px 30px 30px;
      margin: auto;
      opacity: 0.8;
+     background: url(formBack.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
      background-size: cover;
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     transform: translateY(0%);
 }
+
 h1 {
      font-family: "Poppins";
-     font-size: 25px;
+     font-size: 20px;
      color: white;
      text-align: center;
      letter-spacing: 1px;
 }
 h2 {
      font-family: "Poppins";
-     font-size: 16px;
+     font-size: 14px;
      color: white;
      letter-spacing: 1px;
-}
-option {
-     color: orange;
-     background-color: black;
-     opacity: 0.8;
-}
-select {
-     background-color: black;
-     color: white;
-     width: 84%;
-     height: 32px;
-     border-radius: 5px;
-     border: 2px solid white;
-     padding-left: 20px;
-     font-family: "Poppins";
-     font-size: 12px;
-     cursor: pointer;
-}
-select:focus {
-     border: 2px solid green;
 }
 
 .input-box input {
      padding: 5px 5px 5px 30px;
      border-radius: 5px;
+     border: 3px solid white;
      font-family: "Poppins";
-     font-size: 14px;
+     font-size: 12px;
      color: white;
-     background: black;
-     opacity: 0.8;
-     width: 75%;
+     background: transparent;
+     width: 85%;
 }
 .input-box input:focus {
      border: 3px solid green;
@@ -95,18 +76,20 @@ select:focus {
      position: absolute;
 }
 #button {
-     width: 37%;
+     width: 50%;
      background-color: black;
+     opacity: 0.7;
      color: white;
-     padding: 7px;
-     border: 3px solid orange;
-     border-radius: 12px;
+     padding: 2px;
+     border: 3px solid white;
+     border-radius: 6px;
      text-align: center;
      font-family: "Poppins";
-     font-size: 18px;
+     font-size: 16px;
      letter-spacing: 1px;
 }
 
 #button:hover {
      background-color: green;
 }
+
