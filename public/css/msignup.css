@@ -45,7 +45,8 @@ select {
      cursor: pointer;
 }
 .container {
-     width: 100%;
+     width: 90%;
+     border-radius: 30px;
      /*height: 100vh;*/
      padding:  20px 20px 30px 30px;
      opacity: 0.8;
@@ -54,6 +55,11 @@ select {
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
+     top: 50%;
+     left: 50%;
+     position: absolute;
+     -webkit-transform: transform(-50%,-50%);
+     transform: translate(-50%,-50%);
 }
 
 h1 {
@@ -68,6 +74,7 @@ h2 {
      font-size: 14px;
      color: white;
      letter-spacing: 1px;
+     padding: 4px 0 4px 0
 }
 
 .input-box input {
