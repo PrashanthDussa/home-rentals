@@ -55,7 +55,7 @@ option {
 select {
      background-color: black;
      color: white;
-     width: 84%;
+     width: 80%;
      height: 32px;
      border-radius: 5px;
      border: 2px solid white;
@@ -75,7 +75,7 @@ select:focus {
      font-size: 14px;
      color: white;
      background: transparent;
-     width: 75%;
+     width: 80%;
 }
 .input-box input:focus {
      border: 3px solid green;
