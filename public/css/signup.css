@@ -28,6 +28,7 @@ a {
      background-image: url("formBack.jpg");
      padding: 30px 30px 30px 60px;
      margin: auto;
+     right: 0;
      opacity: 0.8;
      background-size: cover;
      background-attachment: fixed;
