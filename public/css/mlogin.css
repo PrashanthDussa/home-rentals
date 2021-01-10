@@ -39,7 +39,10 @@ html {
      -o-background-size: cover;
      background-size: cover;*/
      position: absolute;
-     transform: translateX(12%) translateY(20%);
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translate (-50%);
+     /*transform: translateX(12%) translateY(20%);*/
 }
 
 h1 {
