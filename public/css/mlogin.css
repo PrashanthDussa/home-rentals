@@ -37,6 +37,7 @@ html {
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
+     position: absolute;
      transform: translateX(12%) translateY(20%);
 }
 
