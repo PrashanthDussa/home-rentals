@@ -28,6 +28,7 @@ html {
 }
 .container {
      width: 80%;
+     margin: auto;
      border-radius: 30px;
      padding:  20px 20px 30px 30px;
      opacity: 0.8;
