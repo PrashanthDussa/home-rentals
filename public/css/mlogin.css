@@ -39,7 +39,7 @@ html {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(12%) translateY(20%);
+     transform: translateX(-50%) translateY(-70%);
 }
 
 h1 {
