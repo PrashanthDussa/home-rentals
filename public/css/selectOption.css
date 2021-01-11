@@ -108,6 +108,14 @@ html {
           background-color: green;
           cursor: pointer;
      }
+     html {
+     background: url(mBack.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     overflow: hidden;
+   }
 }
 #button1 {
      width: 150px;
