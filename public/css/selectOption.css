@@ -42,7 +42,7 @@ html {
           display: none;
      }
      .topnav a.icon {
-          float: left;
+          float: right;
           display: block;
      }
 }
@@ -53,18 +53,13 @@ html {
      }
      .topnav.responsive .icon {
           position: absolute;
-          left: 0;
+          right: 0;
           top: 0;
      }
-     .topnav.responsive a.ok {
+     .topnav.responsive a {
           float: none;
           display: block;
           text-align: left;
-     }
-     .topnav.responsive a.active {
-          float: none;
-          display: block;
-          text-align: right;
      }
 }
 @media screen and (max-width: 600px) {
