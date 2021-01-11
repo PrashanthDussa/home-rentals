@@ -1,9 +1,6 @@
 body{
      margin: 0;
      padding: 0;
-     display: flex;
-     justify-content: center;
-     height: 100vh;
      overflow: hidden;
 }
 .section {
@@ -31,7 +28,6 @@ h2 {
      text-align: center;
      font-family: "Goldman";
      position: absolute;
-     opacity: 0.5;
      top: 20%;
 /*      left: 50%; */
 /*      transform: translateX(-49%) translateY(-310%); */
