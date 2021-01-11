@@ -61,7 +61,7 @@ html {
           display: block;
           text-align: left;
      }
-     .topnav.responsive a.fixed {
+     .topnav.responsive a.active {
           float: none;
           display: block;
           text-align: right;
