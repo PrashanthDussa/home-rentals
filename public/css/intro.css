@@ -25,11 +25,11 @@ h2 {
      padding: 5px 5px 10px 5px;
      font-weight: bolder;
      color: black;
-     text-align: center;
+/*      text-align: center; */
      font-family: "Goldman";
      position: absolute;
      top: 20%;
-     left: 50%;
+/*      left: 50%; */
 /*      transform: translateX(-49%) translateY(-310%); */
      animation: text 3s 1;     
 }
