@@ -40,7 +40,7 @@ h2 {
      transform: translateX(-49%) translateY(-310%);
      animation: text 3s 1; */
      position: relative;
-     top: 20%;
+     top: 5%;
      font-family: sans-serif;
      text-transform: uppercase;
      font-size: 2em;
