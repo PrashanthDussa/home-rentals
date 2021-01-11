@@ -29,11 +29,6 @@ html {
      color: black;
 }
 
-.topnav a.active {
-     background-color: #4caf50;
-     color: white;
-}
-
 .topnav .icon {
      display: none;
 }
@@ -43,7 +38,7 @@ html {
           display: none;
      }
      .topnav a.icon {
-          float: right;
+          float: left;
           display: block;
      }
 }
@@ -54,13 +49,18 @@ html {
      }
      .topnav.responsive .icon {
           position: absolute;
-          right: 0;
+          left: 0;
           top: 0;
      }
-     .topnav.responsive a {
+     .topnav.responsive a.ok {
           float: none;
           display: block;
           text-align: left;
+     }
+     .topnav.responsive a.fixed {
+          float: none;
+          display: block;
+          text-align: right;
      }
 }
 @media screen and (max-width: 600px) {
