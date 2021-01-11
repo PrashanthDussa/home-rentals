@@ -56,9 +56,9 @@ select {
 }
 
 h1 {
-     font-family: "Poppins";
-     font-size: 20px;
-     color: white;
+     font-family: "Open Sans";
+     font-size: 25px;
+     color: black;
      text-align: center;
      letter-spacing: 1px;
 }
@@ -96,19 +96,15 @@ h2 {
 }
 #button {
      width: 50%;
-     background-color: black;
-     opacity: 0.7;
+     background-color: green;
      color: white;
      padding: 2px;
      border: 3px solid white;
-     border-radius: 6px;
+     border-radius: 4px;
      text-align: center;
-     font-family: "Poppins";
+     font-family: "Open Sans";
      font-size: 16px;
      letter-spacing: 1px;
 }
 
-#button:hover {
-     background-color: green;
-}
 
