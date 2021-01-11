@@ -39,18 +39,18 @@ h2 {
      animation: text 3s 1; */
      position: relative;
      top: 20%;
-     left:50%;
+     left:35%;
      font-family: "Goldman";
      text-transform: uppercase;
      font-size: 35px;
      letter-spacing: 4px;
      overflow: hidden;
-     background: linear-gradient(90deg, #000, #fff, #000);
+/*      background: linear-gradient(90deg, #000, #fff, #000); */
      background-repeat: no-repeat;
      background-size: 80%;
      animation: animate 3s linear infinite;
      -webkit-background-clip: text;
-     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+/*      -webkit-text-fill-color: rgba(255, 255, 255, 0); */
 }
 /* @keyframes text {
      0% {
