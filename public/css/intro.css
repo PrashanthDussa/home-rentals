@@ -23,9 +23,9 @@ h2 {
      font-weight: bolder;
      color: black;
      font-family: "Goldman";
-/*      position: absolute; */
+     position: absolute;
      top: 20%;
-/*      left: 50%; */
+     left: 40%;
      animation: text 3s 1;     
 }
 @keyframes text {
