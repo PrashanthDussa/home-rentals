@@ -29,11 +29,11 @@ h2 {
      font-weight: bolder;
      color: black;
      text-align: center;
-     font-family: "Goldman"
+     font-family: "Goldman";
      position: absolute;
      opacity: 0.5;
-/*      top: 50%; */
-     left: 50%;
+     top: 20%;
+/*      left: 50%; */
 /*      transform: translateX(-49%) translateY(-310%); */
      animation: text 3s 1;     
 }
