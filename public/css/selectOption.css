@@ -32,6 +32,10 @@ html {
 .topnav .icon {
      display: none;
 }
+.topnav a.active{
+     background-color: green;
+     color: white;
+}
 
 @media screen and (max-width: 600px) {
      .topnav a:not(:first-child) {
