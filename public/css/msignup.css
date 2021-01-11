@@ -50,6 +50,7 @@ select {
      top: 50%;
      left: 50%;
      margin: auto;
+     position: absolute;
      transform: translateX(-50%) translateY(-50%);
      /*background: url(formBack.png) no-repeat center center fixed;
      -webkit-background-size: cover;
