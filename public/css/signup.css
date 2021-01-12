@@ -58,6 +58,7 @@ h2 {
 option {
      color: orange;
      background: black;
+     padding: 2px;
      opacity: 0.8;
 }
 select {
