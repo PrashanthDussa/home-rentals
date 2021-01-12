@@ -61,13 +61,11 @@ h1 {
      font-size: 25px;
      color: white;
      text-align: center;
-     letter-spacing: 1px;
 }
 h2 {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     letter-spacing: 1px;
 }
 
 .input-box input {
@@ -81,7 +79,7 @@ h2 {
      width: 85%;
 }
 .input-box input:focus {
-     border: 2px solid #336b89;
+     border: 2px solid #c2b280;
 }
 
 .input-box i {
@@ -105,7 +103,6 @@ h2 {
      text-align: center;
      font-family: "Open Sans";
      font-size: 16px;
-     letter-spacing: 1px;
 }
 
 
