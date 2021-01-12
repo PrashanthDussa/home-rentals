@@ -19,12 +19,11 @@ body {
      width: 50%;
      height: 100vh;
      position: absolute;
-     right: 0;
 }
 .container h2 {
      color: black;
      font-family: "Goldman";
-     font-size: 50px;
+     font-size: 35px;
      width: 100%;
      position: absolute;
      top: 20%;
