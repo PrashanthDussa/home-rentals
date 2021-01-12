@@ -28,12 +28,13 @@ html {
 option {
      color: orange;
      background-color: black;
+     opacity: 0.8;
 }
 select {
      background-color: black;
+     opacity: 0.8;
      color: white;
      width: 85%;
-     height: 32px;
      border-radius: 5px;
      border: 2px solid white;
      padding: 3px 3px 3px 20px;
