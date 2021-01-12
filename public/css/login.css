@@ -60,7 +60,7 @@ h2 {
 .input-box input {
      padding: 5px 5px 5px 30px;
      border-radius: 5px;
-     border: 3px solid white;
+     border: 2px solid white;
      font-family: "Poppins";
      font-size: 14px;
      color: white;
@@ -68,7 +68,7 @@ h2 {
      width: 70%;
 }
 .input-box input:focus {
-     border: 3px solid green;
+     border: 2px solid green;
 }
 
 .input-box i {
