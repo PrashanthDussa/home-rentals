@@ -3,6 +3,9 @@
 }
 * {
      box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     border: 0;
 }
 body {
      margin: 0;
@@ -39,8 +42,8 @@ a {
      transform: translateY(0%);
 }
 h1 {
-     font-family: "Poppins";
-     font-size: 25px;
+     font-family: "Open Sans";
+     font-size: 30px;
      color: white;
      text-align: center;
      letter-spacing: 1px;
@@ -50,6 +53,7 @@ h2 {
      font-size: 16px;
      color: white;
      letter-spacing: 1px;
+     padding: 20px 0 7px 0;
 }
 option {
      color: orange;
@@ -98,18 +102,15 @@ select:focus {
 }
 #button {
      width: 40%;
-     background-color: black;
-     opacity: 0.8;
+     background-color: green;
      color: white;
      padding: 4px 4px 7px 4px;
      border: 3px solid orange;
      border-radius: 12px;
      text-align: center;
-     font-family: "Poppins";
+     font-family: "Open Sans";
      font-size: 18px;
      letter-spacing: 1px;
 }
 
-#button:hover {
-     background-color: green;
-}
+
