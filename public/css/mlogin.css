@@ -52,13 +52,11 @@ h1 {
      font-size: 25px;
      color: black;
      text-align: center;
-     letter-spacing: 1px;
 }
 h2 {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     letter-spacing: 1px;
      padding: 5px 0 5px 0;
 }
 
@@ -96,7 +94,6 @@ h2 {
      text-align: center;
      font-family: "Open Sans";
      font-size: 16px;
-     letter-spacing: 1px;
 }
 
 
