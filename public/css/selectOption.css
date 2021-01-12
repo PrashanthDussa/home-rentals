@@ -20,12 +20,9 @@ html {
      display: block;
      color: #f2f2f2;
      text-align: center;
-     padding: 14px 115px;
+     padding: 14px 135px;
      text-decoration: none;
      font-size: 17px;
-}
-.topnav a:last-child {
-     padding: 14px 200px 14px 115px;
 }
 .topnav a:hover {
      background-color: #336b89;
