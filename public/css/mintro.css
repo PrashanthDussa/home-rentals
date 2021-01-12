@@ -26,6 +26,7 @@ body {
      font-size: 35px;
      width: 100%;
      position: absolute;
+     padding: 10px;
      top: 20%;
      left: 12%;
 }
