@@ -40,6 +40,44 @@ html {
 .topnav a.active{
      color: white;
 }
+#button1 {
+     width: 20%;
+     font-size: 20px;
+     color: white;
+     padding: 8px;
+     border-radius: 10px;
+     border: 3px solid white;
+     background-color: green;
+     text-align: center;
+     font-family: "Open Sans";
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-135%) translateY(+70%);
+}
+
+#button1:hover {
+     cursor: pointer;
+}
+#button2 {
+     width: 20%;
+     font-size: 20px;
+     color: white;
+     padding: 8px;
+     border-radius: 10px;
+     border: 3px solid white;
+     background-color: #336b89;
+     text-align: center;
+     font-family: "Open Sans";
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(15%) translateY(+70%);
+}
+
+#button2:hover {
+     cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
      .topnav a:not(:first-child) {
@@ -122,42 +160,4 @@ html {
      background-size: cover;
      overflow: hidden;
    }
-}
-#button1 {
-     width: 20%;
-     font-size: 20px;
-     color: white;
-     padding: 8px;
-     border-radius: 10px;
-     border: 3px solid white;
-     background-color: green;
-     text-align: center;
-     font-family: "Open Sans";
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translateX(-135%) translateY(+70%);
-}
-
-#button1:hover {
-     cursor: pointer;
-}
-#button2 {
-     width: 20%;
-     font-size: 20px;
-     color: white;
-     padding: 8px;
-     border-radius: 10px;
-     border: 3px solid white;
-     background-color: #336b89;
-     text-align: center;
-     font-family: "Open Sans";
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translateX(15%) translateY(+70%);
-}
-
-#button2:hover {
-     cursor: pointer;
 }
