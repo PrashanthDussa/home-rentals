@@ -1,53 +1,44 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Tenant</title>
-    <meta name="viewport" content="width=device-width,intial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" media="screen and (min-width: 500px)" type="text/css" href="/css/tenant.css">
-    <link rel="stylesheet" media="screen and (max-width: 499px)" type="text/css" href="/css/mtenant.css">
-    <link rel="icon" href="icon.png" type="image/png">
-</head>
-
-<body>
-    <form action="/findAddress" method="POST">
-        <div class="form-box">
-            <h1>Details</h1>
-            <div class="input-select">
-                <p>State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select name="state">
-                        <option>Telangana</option>
-                    </select>
-                </p>
-            </div>
-            <div class="input-select">
-                <p>District:&nbsp;&nbsp;
-                    <select name="district">
-                        <option>Jangaon</option>
-                    </select>
-                </p>
-            </div>
-            <div class="input-select">
-                <p>Town:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select name="town">
-                        <option>Jangaon</option>
-                    </select>
-                </p>
-            </div>
-            <div class="input-select">
-                <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <select name="area">
-                        <option>Ganesh Street</option>
-                        <option>Sanjay Nagar</option>
-                        <option>Hyderabad Road</option>
-                    </select>
-                </p>
-            </div>
-            <input type="submit" value="Continue" id="button" />
-            <br/><br/>
-    </form>
-    </div>
-</body>
-
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Sign up</title>
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins&effect=outline|anaglyph"
+          />
+          <link rel="stylesheet" media="screen and (min-width: 500px)" type="text/css" href="/css/tenant.css">
+          <link rel="stylesheet" media="screen and (max-width: 499px)" type="text/css" href="/css/mtenant.css">
+          <link rel="icon" href="icon.png" type="image/png">
+     </head>
+     <body>
+          <div class="container">
+               <h1 class="font-effect-outline">Details</h1>
+               <h2>State</h2>
+               <select name="state">
+                    <option>Telangana</option>
+               </select>
+               <h2>District</h2>
+               <select name="district">
+                    <option>Jangaon</option>
+               </select>
+               <h2>Town</h2>
+               <select name="town">
+                    <option>Jangaon</option>
+               </select>
+               <h2>Area</h2>
+               <select name="area">
+                    <option>Ganesh Street</option>
+                    <option>Sanjay Nagar</option>
+                    <option>Hyderabad Road</option>
+               </select>
+               <form action="/findAddress" method="POST">
+                    <input type="submit" value="Continue" id="button" />
+               </form>
+          </div>
+     </body>
 </html>
