@@ -2,7 +2,7 @@ body {
      margin: 0;
 }
 html {
-     background: url(back.png) no-repeat center center fixed;
+     background: url(mBack.png) no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -28,6 +28,10 @@ a {
      background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
      padding: 30px 30px 30px 30px;
      position: absolute;
+     border-radius: 30px;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%);
      margin: auto;
      opacity: 0.8;
 }
@@ -72,7 +76,7 @@ select:focus {
      font-size: 14px;
      color: white;
      background: black;
-     width: 75%;
+     width: 85%;
 }
 .input-box input:focus {
      border: 3px solid green;
@@ -90,7 +94,7 @@ select:focus {
      position: absolute;
 }
 #button {
-     width: 40%;
+     width: 50%;
      background-color: green;
      color: white;
      padding: 7px;
@@ -100,6 +104,6 @@ select:focus {
      font-family: "Open Sans";
      font-size: 18px;
      letter-spacing: 1px;
-     margin-top: 50px;
+     margin-top: 35px;
      cursor: pointer;
 }
