@@ -27,14 +27,14 @@ body {
      width: 100%;
      position: absolute;
      top: 20%;
-     left: 20%;
+     left: 10%;
 }
 
 #button {
      color: white;
      font-family: "Open Sans";
      font-size: 18px;
-     width: 30%;
+     width: 40%;
      padding: 10px;
      position: absolute;
      top: 50%;
