@@ -17,7 +17,12 @@ html {
      -o-background-size: cover;
      background-size: cover;
 }
-
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Poppins";
+}
 .container {
      width: 50%;
 /*      height: 100%; */
