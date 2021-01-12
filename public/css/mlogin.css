@@ -31,7 +31,7 @@ html {
 .container {
      width: 80%;
      margin: auto;
-     border-radius: 30px;
+     border-radius: 20px;
      padding:  20px 20px 30px 30px;
      opacity: 0.8;
      background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
