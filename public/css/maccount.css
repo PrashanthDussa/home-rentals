@@ -49,7 +49,7 @@ h3 {
 }
 
 #button {
-     width: 40%;
+     width: 43%;
      background-color: green;
      color: white;
      padding: 2px;
@@ -62,7 +62,7 @@ h3 {
      cursor: pointer;
 }
 #button1 {
-     width: 45%;
+     width: 47%;
      background-color: green;
      color: white;
      padding: 2px;
@@ -76,5 +76,5 @@ h3 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(10%) translateY(450%);
+     transform: translateX(0%) translateY(430%);
 }
