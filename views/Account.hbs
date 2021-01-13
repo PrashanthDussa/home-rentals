@@ -40,12 +40,26 @@
                <h3>{{lastName}}</h3>
                <h2>Mobile Number</h2>
                <h3>{{phoneNumber}}</h3>
-               <form action="/getAddress" method="GET">
-                    <input type="submit" id="button" value="My Address" />
-               </form>
-               <form action="/changePassword" method="GET">
-                    <input type="submit" id="button1" value="Change Password" />
-               </form>
+               <div class="divide">
+                    <div class="column">
+                         <form action="/getAddress" method="GET">
+                              <input
+                                   type="submit"
+                                   id="button"
+                                   value="My Address"
+                              />
+                         </form>
+                    </div>
+                    <div class="column">
+                         <form action="/changePassword" method="GET">
+                              <input
+                                   type="submit"
+                                   id="button1"
+                                   value="Change Password"
+                              />
+                         </form>
+                    </div>
+               </div>
           </div>
      </body>
 </html>
