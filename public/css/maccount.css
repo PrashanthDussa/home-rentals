@@ -62,7 +62,7 @@ h3 {
 }
 
 #button {
-     width: 85%;
+     width: 90%;
      background-color: green;
      color: white;
      padding: 2px;
@@ -75,7 +75,7 @@ h3 {
      cursor: pointer;
 }
 #button1 {
-     width: 100%;
+     width: 90%;
      background-color: green;
      color: white;
      padding: 2px;
