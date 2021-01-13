@@ -1,53 +1,51 @@
-<html>
-
-<head>
-    <title>My Addresses</title>
-    <style>
-        html {
-            background: url(/css/back.png) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        div {
-            background-color: black;
-            border-radius: 30px;
-            opacity: .8;
-            width: 50%;
-            margin: auto;
-            padding: 10px;
-            text-align: center;
-            transform: translateX(0%) translateY(30%);
-        }
-
-        p {
-            color: white;
-            font-size: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        span {
-            color: orange;
-            font-size: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-    </style>
-    <link rel="icon" href="icon.png" type="image/png">
-</head>
-
-<body>
-    <div>
-        <p>State: <span>{{state}}</span></p>
-        <p>District: <span>{{district}}</span></p>
-        <p>Town: <span>{{town}}</span></p>
-        <p>Area: <span>{{area}}</span></p>
-        <p>Address: <span>{{address}}</span></p>
-        <p>House Description: <span>{{houseDescription}}</span></p>
-        <p>What's app Number: <span>{{contactNumber}}</span></p>
-
-    </div>
-</body>
-
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>My Address</title>
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins&effect=outline|anaglyph"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (min-width: 500px)"
+               type="text/css"
+               href="/css/address.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (max-width: 499px)"
+               type="text/css"
+               href="/css/maddress.css"
+          />
+          <link rel="icon" href="icon.png" type="image/png" />
+     </head>
+     <body>
+          <div class="container">
+               <h1 class="font-effect-outline">Address</h1>
+               <h2>State</h2>
+               <h3>{{state}}</h3>
+               <h2>District</h2>
+               <h3>{{district}}</h3>
+               <h2>Town</h2>
+               <h3>{{town}}</h3>
+               <h2>Area</h2>
+               <h3>{{area}}</h3>
+               <h2>Address</h2>
+               <h3>{{address}}</h3>
+               <h2>House description</h2>
+               <h3>{{houseDescription}}</h3>
+               <h2>What's app number</h2>
+               <h3>{{contactNumber}}</h3>
+          </div>
+     </body>
 </html>
