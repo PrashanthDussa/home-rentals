@@ -1,3 +1,6 @@
+::placeholder{
+     color: black;
+}
 body {
      margin: 0;
 }
@@ -26,7 +29,7 @@ a {
 .container {
      width: 100%;
      background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
-     padding: 20px 20px 30px 60px;
+     padding: 20px 20px 30px 30px;
      position: absolute;
      margin: auto;
      opacity: 0.8;
@@ -49,7 +52,7 @@ h1 {
 }
 h2 {
      font-family: "Poppins";
-     font-size: 18px;
+     font-size: 14px;
      color: white;
      padding: 7px 0px 7px 0px;
 }
