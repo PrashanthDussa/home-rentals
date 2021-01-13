@@ -27,7 +27,15 @@ html {
      left: 50%;
      transform: translateX(-50%) translateY(-50%);
 }
-
+.column {
+     float: left;
+     width: 50%;
+}
+.divide:after {
+     content: "";
+     display: table;
+     clear: both;
+}
 h1 {
      font-family: "Open Sans";
      font-size: 25px;
@@ -49,7 +57,7 @@ h3 {
 }
 
 #button {
-     width: 43%;
+     width: 80%;
      background-color: green;
      color: white;
      padding: 2px;
@@ -62,7 +70,7 @@ h3 {
      cursor: pointer;
 }
 #button1 {
-     width: 47%;
+     width: 80%;
      background-color: green;
      color: white;
      padding: 2px;
@@ -73,8 +81,5 @@ h3 {
      font-size: 16px;
      margin-top: 7px;
      cursor: pointer;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translateX(0%) translateY(430%);
+     
 }
