@@ -20,9 +20,12 @@ html {
      background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
      padding: 20px 20px 30px 30px;
      position: absolute;
-     right: 0;
+     border-radius: 20px;
      margin: auto;
      opacity: 0.8;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%);
 }
 
 h1 {
@@ -60,10 +63,10 @@ h3 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(-104%) translateY(350%);
+     transform: translateX(-110%) translateY(450%);
 }
 #button1 {
-     width: 35%;
+     width: 40%;
      background-color: green;
      color: white;
      padding: 2px;
@@ -77,5 +80,5 @@ h3 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(10%) translateY(350%);
+     transform: translateX(10%) translateY(450%);
 }
