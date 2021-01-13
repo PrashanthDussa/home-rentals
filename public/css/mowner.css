@@ -26,7 +26,7 @@ a {
 .container {
      width: 100%;
      background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
-     padding: 30px 30px 30px 60px;
+     padding: 20px 20px 30px 60px;
      position: absolute;
      margin: auto;
      opacity: 0.8;
@@ -42,7 +42,7 @@ a {
 }
 h1 {
      font-family: "Open Sans";
-     font-size: 30px;
+     font-size: 25px;
      color: white;
      text-align: center;
      padding: 5px;
@@ -55,7 +55,7 @@ h2 {
 }
 h3 {
      font-family: "Poppins";
-     font-size: 18px;
+     font-size: 14px;
      color: white;
      padding: 15px 0px 15px 0px;
 }
@@ -65,8 +65,9 @@ option {
 }
 select {
      background-color: black;
+     opacity: 0.8
      color: white;
-     width: 70%;
+     width: 85%;
      border-radius: 5px;
      border: 2px solid white;
      padding: 3px 3px 3px 15px;
@@ -85,8 +86,8 @@ select:focus {
      font-family: "Poppins";
      font-size: 14px;
      color: white;
-     background: black;
-     width: 70%;
+     background: transparent;
+     width: 85%;
 }
 .check input {
      position: absolute;
@@ -103,7 +104,7 @@ select:focus {
      cursor: pointer;
      font-family: "Poppins";
      color: white;
-     font-size: 16px;
+     font-size: 12px;
      -webkit-user-select: none;
      -moz-user-select: none;
      user-select: none;
@@ -157,15 +158,15 @@ select:focus {
      position: absolute;
 }
 #button {
-     width: 40%;
+     width: 50%;
      background-color: green;
      color: white;
-     padding: 7px;
+     padding: 2px;
      border: 3px solid white;
-     border-radius: 10px;
+     border-radius: 4px;
      text-align: center;
      font-family: "Open Sans";
-     font-size: 18px;
+     font-size: 16px;
      margin-top: 30px;
      cursor: pointer;
 }
