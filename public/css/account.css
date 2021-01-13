@@ -61,7 +61,7 @@ h3 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(-104%) translateY(250%);
+     transform: translateX(-104%) translateY(350%);
 }
 #button1 {
      width: 40%;
@@ -78,5 +78,5 @@ h3 {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translateX(10%) translateY(250%);
+     transform: translateX(10%) translateY(350%);
 }
