@@ -29,7 +29,12 @@ html {
 }
 .column {
      float: left;
-     width: 50%;
+}
+.left {
+     width: 40%;
+}
+.right {
+     width: 60%;
 }
 .divide:after {
      content: "";
