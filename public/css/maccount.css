@@ -60,10 +60,6 @@ h3 {
      font-size: 16px;
      margin-top: 30px;
      cursor: pointer;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translateX(-110%) translateY(450%);
 }
 #button1 {
      width: 40%;
