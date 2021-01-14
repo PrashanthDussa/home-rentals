@@ -1,75 +1,64 @@
-<html>
-
-<head>
-    <title>Available Houses</title>
-    <style>
-        html {
-            background: url(/css/back.png) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        div {
-            background-color: black;
-            border-radius: 30px;
-            opacity: .8;
-            width: 60%;
-            margin: auto;
-            padding: 10px;
-            text-align: center;
-            transform: translateX(0%) translateY(0%);
-        }
-
-        p {
-            color: white;
-            font-size: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        h1 {
-            color: lightgreen;
-            font-size: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        span {
-            color: orange;
-            font-size: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-    </style>
-    <link rel="icon" href="icon.png" type="image/png">
-</head>
-
-<body>
-    <div>
-        <p>Owner Name: <span>{{firstName}} {{lastName}}</span></p>
-        <p>Email: <span>{{email}}</span></p>
-        <p>State: <span>{{state}}</span></p>
-        <p>District: <span>{{district}}</span></p>
-        <p>Town: <span>{{town}}</span></p>
-        <p>Area: <span>{{area}}</span></p>
-        <p>Address: <span>{{address}}</span></p>
-        <p>House Description: <span>{{houseDescription}}</span></p>
-        <p>What's app Number: <span>{{contactNumber}}</span></p>
-        <h1>Down below are the status of necessary places within a radius of 1km</h1>
-        <p>Vegtable market: <span>{{veg}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shopping mall: <span>{{shop}}</span>
-        </p>
-        <p>Milk booth:
-            <span>{{milk}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grocery store:
-            <span>{{grocery}}</span>
-        </p>
-        <p>Hospital:
-            <span>{{hospital}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cinema
-            hall: <span>{{cinema}}</span>
-        </p>
-        <p>Bus stand:
-            <span>{{bus}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Railway
-            station: <span>{{rail}}</span>
-        </p>
-    </div>
-</body>
-
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Available Houses</title>
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Goldman&effect=outline|anaglyph|shadow-multiple"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (min-width: 500px)"
+               type="text/css"
+               href="/css/house.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (max-width: 499px)"
+               type="text/css"
+               href="/css/mhouse.css"
+          />
+          <link rel="icon" href="icon.png" type="image/png" />
+     </head>
+     <body>
+          <div class="container">
+               <h1 class="font-effect-shadow-multiple">Houses Available</h1>
+               <h2>State</h2>
+               <h3>{{state}}</h3>
+               <h2>District</h2>
+               <h3>{{district}}</h3>
+               <h2>Town</h2>
+               <h3>{{town}}</h3>
+               <h2>Area</h2>
+               <h3>{{area}}</h3>
+               <h2>Address</h2>
+               <h3>{{address}}</h3>
+               <h2>House description</h2>
+               <h3>{{houseDescription}}</h3>
+               <h2>What's app number</h2>
+               <h3>{{contactNumber}}</h3>
+               <h4>
+                    The following shops are available with in the radius of 1km
+               </h4>
+               <div class="divide">
+                    <div class="column">
+                         <h5>Vegetable market:<span>{{veg}}</span></h5>
+                         <h5>Milk booth:<span>{{milk}}</span></h5>
+                         <h5>Hospital:<span>{{hospital}}</span></h5>
+                         <h5>Bus stand:<span>{{bus}}</span></h5>
+                    </div>
+                    <div class="column">
+                         <h5>Shopping mall:<span>{{shop}}</span></h5>
+                         <h5>Grocery store:<span>{{grocery}}</span></h5>
+                         <h5>Cinema hall:<span>{{cinema}}</span></h5>
+                         <h5>Railway station:<span>{{rail}}</span></h5>
+                    </div>
+               </div>
+          </div>
+     </body>
 </html>
