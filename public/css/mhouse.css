@@ -27,10 +27,10 @@ html {
      float: left;
 }
 .left{
-     width: 60%;
+     width: 50%;
 }
 .right{
-     width: 40%;
+     width: 50%;
 }
 .divide:after {
      content: "";
