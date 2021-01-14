@@ -63,6 +63,7 @@ h2 {
      color: white;
      background: transparent;
      width: 70%;
+     margin-bottom: 10px;
 }
 .input-box input:focus {
      border-color: 2px solid #c2b280;
