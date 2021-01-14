@@ -8,12 +8,12 @@
      border: 0;
 }
 a:hover {
-     color: orange;
+     color: black;
 }
 a {
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
     font-family: "Poppins";
 }
 body,html {
