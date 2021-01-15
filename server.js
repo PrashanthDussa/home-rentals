@@ -387,7 +387,7 @@ app.post("/setPassword", (req, res) => {
                                    res.status(400).sendFile(
                                         path.join(
                                              __dirname +
-                                                  "/public/passwordChangeSuccess.html"
+                                                  "/public/resetSuccess.html"
                                         )
                                    );
                               }
