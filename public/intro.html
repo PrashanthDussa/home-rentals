@@ -24,10 +24,18 @@
                href="https://fonts.googleapis.com/css?family=Open+Sans|Goldman&effect=anaglyph|fire"
           />
           <link rel="icon" href="icon.png" type="image/png" />
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-          <script src="format.js"></script>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
      </head>
      <body>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
           <div class="container">
                <h2 class="font-effect-fire">HOME RENTALS</h2>
                <form action="login.html">
