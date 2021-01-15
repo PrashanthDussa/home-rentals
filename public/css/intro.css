@@ -54,6 +54,7 @@ body {
      position: absolute;
      top: 0;
      left: 0;
+     z-index: 1;
      background-color: #242f3f;
      display: flex;
      justify-content: center;
