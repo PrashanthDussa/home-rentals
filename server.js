@@ -371,6 +371,36 @@ app.post("/newPassword", (req, res) => {
     res.sendFile(path.join(__dirname + "/public/login.html"));
   }
 });
+app.post("/setPassword", (req, res) => {
+     if (req.session && req.session.user) {
+          User.findOne({ email: req.session.user.email }).then((user) => {
+               if (!user) {
+                    req.session.reset();
+                    res.sendFile(path.join(__dirname + "/public/login.html"));
+               } else {
+                    var password = req.body.password;
+                    bcrypt.genSalt(10, (err, salt) => {
+                         bcrypt.hash(password, salt, (err, hash) => {
+                              User.updateOne(
+                                   { email: user.email },
+                                   { password: hash },
+                                   (e, result) => {
+                                        res.status(400).sendFile(
+                                             path.join(
+                                                  __dirname +
+                                                       "/public/passwordChangeSuccess.html"
+                                             )
+                                        );
+                                   }
+                              );
+                         });
+                    });
+               }
+          });
+     } else {
+          res.sendFile(path.join(__dirname + "/public/login.html"));
+     }
+});
 
 app.get("/logout", (req, res) => {
   req.session.reset();
