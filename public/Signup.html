@@ -29,8 +29,17 @@
                href="/css/msignup.css"
           />
           <link rel="icon" href="icon.png" type="image/png" />
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
      </head>
      <body>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
                <div class="container">
                     <div class="login-box">
                          <form action="/create-account" method="POST">
