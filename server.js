@@ -289,6 +289,7 @@ app.post("/findAddress", (req, res) => {
               firstName: user.firstName,
               lastName: user.lastName,
               email: user.email,
+              securityQuestion: user.securityQuestion,
               state: user.ownerInfo[0].state,
               district: user.ownerInfo[0].district,
               town: user.ownerInfo[0].town,
