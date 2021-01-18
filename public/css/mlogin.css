@@ -33,43 +33,14 @@ html {
      border-radius: 20px;
      padding:  20px 20px 30px 30px;
      opacity: 0.8;
-     /*background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);*/
-     /*background: url(formBack.png) no-repeat center center fixed;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;*/
+     background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
      position: absolute;
      top: 50%;
      left: 50%;
      transform: translateX(-50%) translateY(-50%);
-     /*transform: translateX(12%) translateY(20%);*/
-     /*backdrop-filter: blur(5px);*)
-     box-shadow: 0 10px 20px rgba(0, 0, 0, .5); 
-
-            color: rgb(255, 254, 254); 
+     backdrop-filter: blur(10px);
+     
 }
- .container::before { 
-
-            content: ''; 
-
-            position: absolute; 
-
-            top: 0; 
-
-            bottom: 0; 
-
-            left: 0; 
-
-            right: 0; 
-
-            background: url(mBack.png); 
-
-            background-attachment: fixed; 
-
-            filter: blur(8px); 
-
-        } 
 
 h1 {
      font-family:"Goldman";
