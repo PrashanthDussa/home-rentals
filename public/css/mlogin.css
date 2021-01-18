@@ -33,8 +33,7 @@ html {
      border-radius: 20px;
      padding:  20px 20px 30px 30px;
      opacity: 0.8;
-     /*background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);*/
-     background: white;
+     background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
      position: absolute;
      top: 50%;
      left: 50%;
