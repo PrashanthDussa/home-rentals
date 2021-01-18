@@ -44,6 +44,7 @@ html {
      left: 50%;
      transform: translateX(-50%) translateY(-50%);
      /*transform: translateX(12%) translateY(20%);*/
+     backdrop-filter: blur(10px);
 }
 
 h1 {
