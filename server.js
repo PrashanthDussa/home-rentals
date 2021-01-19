@@ -378,26 +378,14 @@ app.post("/setPassword", (req, res) => {
                req.session.reset();
                res.sendFile(path.join(__dirname + "/public/noUser.html"));
           } else {
-               var password = req.body.password;
-               bcrypt.genSalt(10, (err, salt) => {
-                    bcrypt.hash(password, salt, (err, hash) => {
-                         User.updateOne(
-                              { email: user.email },
-                              { password: hash },
-                              (e, result) => {
-                                   res.status(400).sendFile(
-                                        path.join(
-                                             __dirname +
-                                                  "/public/resetSuccess.html"
-                                        )
-                                   );
-                              }
-                         );
-                    });
+               res.render("resetPassword.hbs", {
+                    email: user.email,
+                    securityQuestion: user.securityQuestion,
                });
           }
      });
 });
+
 app.get("/logout", (req, res) => {
   req.session.reset();
   res.redirect("/login.html");
