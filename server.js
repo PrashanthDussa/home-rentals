@@ -393,7 +393,7 @@ app.post("/resetPassword", (req, res) => {
                var securityAnswer = req.body.securityAnswer;
                var newPassword = req.body.password;
                if (securityAnswer !== user.securityAnswer) {
-                    res.sendFile(path.join(__dirname + "/public/noUser.html"));
+                    res.sendFile(path.join(__dirname + "/public/invalidPassword.html"));
                } else {
                     bcrypt.genSalt(10, (err, salt) => {
                          bcrypt.hash(newPassword, salt, (err, hash) => {
