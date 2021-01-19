@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Incorrect Answer</title>
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Poppins|Goldman|karla|Open+Sans&effect=anaglyph|shadow-multiple|outline|neon|fire|3d|wallpaper"
+          />
+          <link rel="icon" href="icon.png" type="image/png" />
+          <link
+               rel="stylesheet"
+               media="screen and (min-width: 500px)"
+               type="text/css"
+               href="/css/status.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (max-width: 499px)"
+               type="text/css"
+               href="/css/mstatus.css"
+          />
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
+     </head>
+     <body>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <div class="container">
+               <h1 class="font-effect-shadow-multiple">Incorrect Security Answer</h1>
+                 <form action="setPassword.html" method="GET">
+                   <input type="submit" value="Try again" id="button" />
+                </form>
+          </div>
+     </body>
+</html>
