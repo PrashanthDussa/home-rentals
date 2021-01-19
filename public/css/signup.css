@@ -19,6 +19,7 @@ html {
 }
 ::-webkit-scrollbar{
      width: 15px;
+     height: 30px;
 }
 ::-webkit-scrollbar-track{
       background: #1d191f;
@@ -37,17 +38,11 @@ a:hover {
 }
 .container {
      width: 50%;
-/*      height: 100%; */
-     /*background-image: url("formBack.png");*/ 
      background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
      padding: 30px 30px 30px 60px;
      position: absolute;
      right: 0;
      opacity: 0.8;
-     /*background-size: cover;
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;*/
      transform: translateY(0%);
 }
 h1 {
