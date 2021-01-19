@@ -14,6 +14,19 @@ html {
      padding: 0;
      border: 0;
 }
+:root{
+   scrollbar-color: #2d4059 #1d191f !important;
+   scrollbar-width: thin !important;  
+}
+::-webkit-scrollbar{
+     width: 15px;
+}
+::-webkit-scrollbar-track{
+      background: #1d191f;
+}
+::-webkit-scrollbar-thumb{
+      background: #2d4059;
+}
 a:hover {
      color: orange;
 }
