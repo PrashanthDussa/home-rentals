@@ -34,7 +34,6 @@ html {
      position: absolute;
      right: 0;
      opacity: 0.8;
-     backdrop-filter: blur(40px);
 }
 
 h1 {
