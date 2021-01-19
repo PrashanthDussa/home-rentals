@@ -385,6 +385,36 @@ app.post("/setPassword", (req, res) => {
           }
      });
 });
+app.post("/resetPassword", (req, res) => {
+     User.findOne({ email: req.body.email }).then((user) => {
+          if (!user) {
+               res.sendFile(path.join(__dirname + "/public/noUser.html"));
+          } else {
+               var securityAnswer = req.body.securityAnswer;
+               var newPassword = req.body.password;
+               if (securityAnswer !== user.securityAnswer) {
+                    res.sendFile(path.join(__dirname + "/public/noUser.html"));
+               } else {
+                    bcrypt.genSalt(10, (err, salt) => {
+                         bcrypt.hash(newPassword, salt, (err, hash) => {
+                              User.updateOne(
+                                   { email: user.email },
+                                   { password: hash },
+                                   (e, result) => {
+                                        res.status(400).sendFile(
+                                             path.join(
+                                                  __dirname +
+                                                       "/public/passwordChangeSuccess.html"
+                                             )
+                                        );
+                                   }
+                              );
+                         });
+                    });
+               }
+          }
+     });
+});
 
 app.get("/logout", (req, res) => {
   req.session.reset();
