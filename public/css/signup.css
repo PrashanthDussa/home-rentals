@@ -17,6 +17,10 @@ html {
      -o-background-size: cover;
      background-size: cover;
 }
+:root{
+   scrollbar-color: #2d4059 #1d191f !important;
+   scrollbar-width: thin !important;  
+}
 ::-webkit-scrollbar{
      width: 15px;
      height: 30px;
