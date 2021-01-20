@@ -94,33 +94,33 @@ h3 {
      color: white;
      padding: 10px;
      font-size: 20px;
-     width: 20%;
+     width: 25%;
      text-align: center;
      text-decoration: none;
-     margin: 10px;
-     border-radius: 10px;
+     margin: 10px 10px 10px 0;
+     border-radius: 5px;
 }
 #github{
      background: #dd4b39;
      color: white;
      padding: 10px;
      font-size: 20px;
-     width: 20%;
+     width: 25%;
      text-align: center;
      text-decoration: none;
      margin: 10px;
-     border-radius: 10px;
+     border-radius: 5px;
 }
      #insta{
      background: #125688;
      color: white;
      padding: 10px;
      font-size: 20px;
-     width: 20%;
+     width: 25%;
      text-align: center;
      text-decoration: none;
-     margin: 10px;
-     border-radius: 10px;
+     margin: 10px 10px 10px 0;
+     border-radius: 5px;
 }
 .loader-wrapper {
      width: 100%;
