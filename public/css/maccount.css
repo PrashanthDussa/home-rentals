@@ -97,7 +97,7 @@ h3 {
      width: 20%;
      text-align: center;
      text-decoration: none;
-     margin: 10px;
+     margin-right: 10px;
      border-radius: 10px;
 }
 #github{
@@ -108,7 +108,7 @@ h3 {
      width: 20%;
      text-align: center;
      text-decoration: none;
-     margin: 10px;
+     margin: 0 10px 0 10px;
      border-radius: 10px;
 }
      #insta{
@@ -119,7 +119,7 @@ h3 {
      width: 20%;
      text-align: center;
      text-decoration: none;
-     margin: 10px;
+     margin-left: 10px;
      border-radius: 10px;
 }
 .loader-wrapper {
