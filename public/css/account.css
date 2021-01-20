@@ -80,6 +80,39 @@ h3 {
      margin-top: 30px;
      cursor: pointer;
 }
+#linkedIn{
+     background: #007bb5;
+     color: white;
+     padding: 15px;
+     font-size: 30px;
+     width: 15% ;
+     text-align: center;
+     text-decoration: none;
+     margin: 20px;
+     border-radius: 15px;
+}
+#github{
+     background: #dd4b39;
+     color: white;
+     padding: 15px;
+     font-size: 30px;
+     width: 15%;
+     text-align: center;
+     text-decoration: none;
+     margin: 20px;
+     border-radius: 15px;
+}
+#insta{
+     background: #125688;
+     color: white;
+     padding: 15px;
+     font-size: 30px;
+     width: 15%;
+     text-align: center;
+     text-decoration: none;
+     margin: 20px;
+     border-radius: 15px;
+}
 .loader-wrapper {
      width: 100%;
      height: 100%;
