@@ -2,7 +2,7 @@ body {
      margin: 0;
 }
 html {
-     background: url(back.png) no-repeat center center fixed;
+     background: url("mBack.png") no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -16,18 +16,22 @@ html {
 }
 
 .container {
-     width: 50%;
-     height: 100vh;
+     width: 100%;
      background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
-     padding: 30px 30px 30px 60px;
+     padding: 20px 20px 30px 30px;
      position: absolute;
-     right: 0;
      margin: auto;
      opacity: 0.8;
 }
 .column {
      float: left;
+}
+.left{
      width: 50%;
+}
+.right{
+     width: 50%;
+     padding-left: 10px;
 }
 .divide:after {
      content: "";
@@ -36,83 +40,41 @@ html {
 }
 h1 {
      font-family: "Goldman";
-     font-size: 30px;
+     font-size: 25px;
      color: black;
      text-align: center;
-     padding: 5px 0 25px 0;
+     padding: 5px 0 20px 0;
 }
 h2 {
      font-family: "Poppins";
-     font-size: 18px;
+     font-size: 15px;
      color: white;
-     padding: 7px 0px 7px 0px;
+     padding: 5px 0px 5px 0px;
 }
 h3 {
      font-family: "Poppins";
-     font-size: 18px;
-     color: rgb(209, 197, 28);
-     padding-bottom: 20px;
+     font-size: 15px;
+     color: rgb(236, 223, 43);
+     padding-bottom: 5px;
+}
+h4 {
+     font-family: "Poppins";
+     font-size: 15px;
+     color: white;
+     padding: 15px 0px 15px 0px;
+}
+h5 {
+     font-family: "Poppins";
+     font-size: 13px;
+     color: white;
+     padding-bottom: 10px;
+}
+span {
+     color: rgb(236, 223, 43);
+     padding-left: 7px;
 }
 
-#button {
-     width: 70%;
-     background-color: green;
-     color: white;
-     padding: 7px;
-     border: 3px solid white;
-     border-radius: 10px;
-     text-align: center;
-     font-family: "Open Sans";
-     font-size: 18px;
-     margin-top: 30px;
-     cursor: pointer;
-}
-#button1 {
-     width: 70%;
-     background-color: green;
-     color: white;
-     padding: 7px;
-     border: 3px solid white;
-     border-radius: 10px;
-     text-align: center;
-     font-family: "Open Sans";
-     font-size: 18px;
-     margin-top: 30px;
-     cursor: pointer;
-}
-#linkedIn{
-     background: #007bb5;
-     color: white;
-     padding: 10px;
-     font-size: 25px;
-     width: 25% ;
-     text-align: center;
-     text-decoration: none;
-     margin: 20px 20px 20px 0p;
-     border-radius: 15px;
-}
-#github{
-     background: #dd4b39;
-     color: white;
-     padding: 10px;
-     font-size: 25px;
-     width: 25%;
-     text-align: center;
-     text-decoration: none;
-     margin: 20px;
-     border-radius: 15px;
-}
-#insta{
-     background: #125688;
-     color: white;
-     padding: 10px;
-     font-size: 25px;
-     width: 25%;
-     text-align: center;
-     text-decoration: none;
-     margin: 20px 20px 20px 0;
-     border-radius: 15px;
-}
+
 .loader-wrapper {
      width: 100%;
      height: 100%;

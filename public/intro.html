@@ -1,25 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
      <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
           <title>Home Rentals</title>
-          <meta name="viewport" content="width=device-width,intial-scale=1.0">
-          <link rel="stylesheet" media="screen and (min-width: 500px)" type="text/css" href="/css/intro.css" />
-          <link rel="stylesheet" media="screen and (max-width: 499px)" type="text/css" href="/css/mintro.css" />
+          <link
+               rel="stylesheet"
+               type="text/css"
+               media="screen and (min-width: 500px)"
+               href="/css/intro.css"
+          />
+          <link
+               rel="stylesheet"
+               type="text/css"
+               media="screen and (max-width: 499px)"
+               href="/css/mintro.css"
+          />
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Open+Sans|Goldman&effect=anaglyph|fire"
+          />
           <link rel="icon" href="icon.png" type="image/png" />
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
      </head>
      <body>
-          <div class="section">
-               <div class="video-container">
-                    <video autoplay loop muted>
-                         <source src="/css/back.mp4" type="video/mp4" />
-                    </video>
-               </div>
-               <h2>Home Rentals</h2>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <div class="container">
+               <h2 class="font-effect-fire">HOME RENTALS</h2>
                <form action="login.html">
-                    <input
-                         type="submit"
-                         value="Continue"
-                         id="button"
-                    />
+                    <button id="button">continue</button>
                </form>
           </div>
      </body>

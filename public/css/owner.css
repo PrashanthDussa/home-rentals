@@ -1,60 +1,5 @@
-h1 {
-     text-align: center;
-     color: white;
-     font-size: 25px;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-h2 {
-     color: lightgreen;
-     font-size: 15px;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     transform: translateX(18%) translateY(+50%);
-}
-h3 {
-     color: white;
-     font-size: 15px;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     transform: translateX(18%) translateY(+20%);
-}
-.checkbox1:checked:before {
-     background-color: green;
-}
-p {
-     color: orange;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     transform: translateX(10%) translateY(+50%);
-}
-#button {
-     margin: 40px auto 20px;
-     width: 70%;
-     display: block;
-     outline: none;
-     padding: 10px 0;
-     border: 3px solid white;
-     cursor: pointer;
-     background: transparent;
-     color: orange;
-     font-size: 16px;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     border-radius: 10px;
-     transform: translateX(5%) translateY(+50%);
-}
-#button:hover {
-     background-color: green;
-}
-.form-box {
-     width: 500px;
-     margin: auto;
-     background: black;
-     padding: 20px;
-     border-radius: 20px;
-     opacity: 0.9;
-     transform: translateX(0%) translateY(+0%);
+body {
+     margin: 0;
 }
 html {
      background: url(back.png) no-repeat center center fixed;
@@ -63,40 +8,241 @@ html {
      -o-background-size: cover;
      background-size: cover;
 }
-
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     border: 0;
+}
+:root{
+   scrollbar-color: #2d4059 #1d191f !important;
+   scrollbar-width: thin !important;  
+}
+::-webkit-scrollbar{
+     width: 15px;
+}
+::-webkit-scrollbar-track{
+      background: #1d191f;
+}
+::-webkit-scrollbar-thumb{
+      background: #2d4059;
+}
+a:hover {
+     color: orange;
+}
+a {
+     color: white;
+     font-family: "Poppins";
+     font-size: 15px;
+     text-decoration: none;
+}
+.container {
+     width: 50%;
+     background: linear-gradient(to bottom right, #2c3e50 0%, #bdc3c7 100%);
+     padding: 30px 30px 30px 60px;
+     position: absolute;
+     right: 0;
+     margin: auto;
+     opacity: 0.8;
+}
+.column {
+     float: left;
+     width: 50%;
+}
+.divide:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+h1 {
+     font-family: "Goldman";
+     font-size: 30px;
+     color: black;
+     text-align: center;
+     padding: 5px;
+}
+h2 {
+     font-family: "Poppins";
+     font-size: 18px;
+     color: white;
+     padding: 7px 0px 7px 0px;
+}
+h3 {
+     font-family: "Poppins";
+     font-size: 18px;
+     color: white;
+     padding: 15px 0px 15px 0px;
+}
 option {
      color: orange;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      background-color: black;
 }
 select {
      background-color: black;
      color: white;
-     width: 200px;
-     height: 25px;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     width: 70%;
      border-radius: 5px;
+     border: 2px solid white;
+     padding: 3px 3px 3px 15px;
+     font-family: "Poppins";
+     font-size: 14px;
      cursor: pointer;
 }
-.input-select {
-     margin: 10px auto;
-     width: 80%;
-     padding-top: 0.5px;
+select:focus {
+     border: 2px solid #c2b280;
 }
-.input-box {
-     margin: 31px auto;
-     width: 60%;
-     border-bottom: 1px solid orange;
-     border-bottom-width: 30%;
-     padding-top: 5px;
-     transform: translateX(-3%) translateY(+50%);
-}
-.input-box input {
-     width: 90%;
-     border: none;
-     outline: none;
-     background: transparent;
+
+.input-box input[type="text"] {
+     padding: 5px 5px 5px 30px;
+     border-radius: 5px;
+     border: 2px solid white;
+     font-family: "Poppins";
+     font-size: 14px;
      color: white;
+     background: black;
+     width: 70%;
+}
+.check input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+     height: 0;
+     width: 0;
+}
+.check {
+     display: block;
+     position: relative;
+     padding-left: 25px;
+     margin-bottom: 15px;
+     cursor: pointer;
+     font-family: "Poppins";
+     color: white;
+     font-size: 16px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+}
+.checkmark {
+     position: absolute;
+     top: 0;
+     left: 0;
+     border-radius: 3px;
+     height: 19px;
+     width: 19px;
+     background-color: white;
+}
+.check:hover input ~ .checkmark {
+     background-color: lightgrey;
+}
+.check input:checked ~ .checkmark {
+     background-color: green;
+}
+.checkmark::after {
+     content: "";
+     position: absolute;
+     display: none;
+}
+.check input:checked ~ .checkmark:after {
+     display: block;
+}
+.check .checkmark:after {
+     left: 5px;
+     top: 2px;
+     width: 5px;
+     height: 9px;
+     border: solid white;
+     border-width: 0 3px 3px 0;
+     -webkit-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+.input-box input:focus {
+     border: 3px solid #c2b280;
+}
+
+.input-box i {
+     position: absolute;
+}
+.icon {
+     padding: 10px;
+     min-width: 40px;
+     color: white;
+}
+.eye {
+     position: absolute;
+}
+#button {
+     width: 40%;
+     background-color: green;
+     color: white;
+     padding: 7px;
+     border: 3px solid white;
+     border-radius: 10px;
+     text-align: center;
+     font-family: "Open Sans";
+     font-size: 18px;
+     margin-top: 30px;
+     cursor: pointer;
+}
+.loader-wrapper {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     background-color: #242f3f;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.loader {
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+     position: relative;
+     border: 4px solid #fff;
+     animation: loader 2s infinite ease;
+}
+.loader-inner {
+     vertical-align: top;
+     display: inline-block;
+     width: 100%;
+     background-color: #fff;
+     animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+     0% {
+          transform: rotate(0deg);
+     }
+     25% {
+          transform: rotate(180deg);
+     }
+     50% {
+          transform: rotate(180deg);
+     }
+     75% {
+          transform: rotate(360deg);
+     }
+     100% {
+          transform: rotate(360deg);
+     }
+}
+
+@keyframes loader-inner {
+     0% {
+          height: 0%;
+     }
+     25% {
+          height: 0%;
+     }
+     50% {
+          height: 100%;
+     }
+     75% {
+          height: 100%;
+     }
+     100% {
+          height: 0%;
+     }
 }

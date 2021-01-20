@@ -1,26 +1,59 @@
+<!DOCTYPE html>
 <html>
+     <head>
+          <title>Select Option</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+           <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins&effect=anaglyph|fire"
+          />
+          <link rel="stylesheet" href="/css/selectOption.css" />
+          <link rel="icon" href="icon.png" type="image/png" />
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
+     </head>
+     <body>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <div class="topnav" id="myTopnav">
+               <a href="intro.html" class="active">Home Rentals</a>
+               <a href="/myAccount" onclick="myAccount()">Account</a>
+               <a href="Contact.html">Contact Us</a>
+               <a href="/logout">Logout</a>
+               <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="myFunction()"
+               >
+                    <i class="fa fa-bars"></i>
+               </a>
+          </div>
 
-<head>
-    <title>Select Option</title>
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 500px)" href="/css/selectOption.css">
-    <link rel="stylesheet" media="screen and (max-width: 499px)" href="/css/mselectOption.css">
-    <link rel="icon" href="icon.png" type="image/png">
-</head>
+          <form action="/tenant" method="GET">
+               <input type="submit" value="Tenant" id="button1" />
+          </form>
+          <form action="/owner" method="GET">
+               <input type="submit" value="Owner" id="button2" />
+          </form>
 
-<body>
-    <form action="/tenant" method="GET">
-        <input type="submit" value="Tenant" id="button1" />
-    </form>
-    <form action="/owner" method="GET">
-        <input type="submit" value="Owner" id="button2" />
-    </form>
-    <ul>
-        <li><a href="intro.html" id="home">Home</a></li>
-        <li><a href="/myAccount" id="account" onclick="myAccount()">Account</a></li>
-        <li><a href="Contact.html" id="contact">Contact Us</a></li>
-        <li><a href="/logout" id="logout">Log Out</a></li>
-    </ul>
-</body>
-
+          <script>
+               function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                         x.className += " responsive";
+                    } else {
+                         x.className = "topnav";
+                    }
+               }
+          </script>
+     </body>
 </html>

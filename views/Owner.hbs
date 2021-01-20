@@ -1,80 +1,145 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <title>Owner</title>
-  <meta name="viewport" content="width=device-width,intial-scale=1.0">
-   <link rel="stylesheet" media="screen and (min-width: 500px)" type="text/css" href="/css/owner.css" />
-   <link rel="stylesheet" media="screen and (max-width: 499px)" type="text/css" href="/css/mowner.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="icon.png" type="image/png">
-</head>
-
-<body>
-  <form action="/saveAddress" method="POST">
-    <div class="form-box">
-      <h1>Details</h1>
-      <div class="input-select">
-        <p>State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <select name="state">
-            <option>Telangana</option>
-          </select>
-        </p>
-      </div>
-      <div class="input-select">
-        <p>District:&nbsp;&nbsp;
-          <select name="district">
-            <option>Jangaon</option>
-          </select>
-        </p>
-      </div>
-      <div class="input-select">
-        <p>Town:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <select name="town">
-            <option>Jangaon</option>
-          </select>
-        </p>
-      </div>
-      <div class="input-select">
-        <p>Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <select name="area">
-            <option>Ganesh Street</option>
-            <option>Sanjay Nagar</option>
-            <option>Hyderabad Road</option>
-          </select>
-        </p>
-      </div>
-      <div class="input-box">
-        <i class="fa fa-address-book" style="color:orange;"></i>
-        <input type="text" placeholder="House Address" name="address" required>
-      </div>
-      <div class="input-box">
-        <i class="fa fa-commenting-o" style="color:orange;"></i>
-        <input type="text" placeholder="House Description(number of rooms etc)" name="houseDescription" required>
-      </div>
-      <div class="input-box">
-        <i class="fa fa-mobile" style="font-size:23px;color:orange;"></i>
-        <input type="text" placeholder="What's app number(can be used by tenant)" name="contactNumber"
-          pattern="[0-9]{10}" maxlength="10" required>
-      </div>
-      <h2>Please select these if they can be accesible </h2>
-      <h2>within 1km radius from your current location</h2>
-      <h3><input type="checkbox" class="checkbox1" name="veg">&nbsp;Vegetable Market
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="checkbox" class="checkbox2" name="shop">&nbsp;Shopping Mall<br><br>
-        <input type="checkbox" class="checkbox3" name="milk">&nbsp;Milk Booth
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="checkbox" class="checkbox4" name="grocery">&nbsp;Grocery Store<br><br>
-        <input type="checkbox" class="checkbox5" name="hospital">&nbsp;Hospital
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="checkbox" class="checkbox6" name="cinema">&nbsp;Cinema Hall<br><br>
-        <input type="checkbox" class="checkbox7" name="bus">&nbsp;Bus Stand
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="checkbox" class="checkbox8" name="rail">&nbsp;Railway Station
-      </h3>
-      <input type="submit" value="Continue" id="button" />
-  </form>
-  </div>
-</body>
-
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Owner</title>
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Goldman&effect=outline|anaglyph|shadow-multiple"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (min-width: 500px)"
+               type="text/css"
+               href="/css/owner.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (max-width: 499px)"
+               type="text/css"
+               href="/css/mowner.css"
+          />
+            <link rel="icon" href="icon.png" type="image/png">
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
+     </head>
+     <body>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <div class="container">
+               <form action="/saveAddress" method="POST">
+                    <h1 class="font-effect-shadow-multiple">Details</h1>
+                    <h2>State</h2>
+                    <select name="state">
+                         <option>Telangana</option>
+                    </select>
+                    <h2>District</h2>
+                    <select name="district">
+                         <option>Jangaon</option>
+                    </select>
+                    <h2>Town</h2>
+                    <select name="town">
+                         <option>Jangaon</option>
+                    </select>
+                    <h2>Area</h2>
+                    <select name="area">
+                         <option>Ganesh Street</option>
+                         <option>Sanjay Nagar</option>
+                         <option>Hyderabad Road</option>
+                    </select>
+                    <div class="input-box">
+                         <h2>House address</h2>
+                         <i class="far fa-address-book icon"></i>
+                         <input
+                              type="text"
+                              placeholder="Address"
+                              name="address"
+                              required
+                         /><br />
+                         <h2>House description</h2>
+                         <i class="far fa-comment-alt icon"></i>
+                         <input
+                              type="text"
+                              placeholder="Number of rooms etc"
+                              name="houseDescription"
+                              required
+                         />
+                         <h2>What's app number</h2>
+                         <i class="fas fa-phone-alt icon"></i>
+                         <input
+                              type="text"
+                              placeholder="Number"
+                              name="contactNumber"
+                              pattern="[0-9]{10}"
+                              maxlength="10"
+                              required
+                         />
+                    </div>
+                    <h3>
+                         Please select these if they can be accesible with in
+                         radius of 1 km
+                    </h3>
+                    <div class="divide">
+                         <div class="column">
+                              <label class="check"
+                                   >Vegetable market
+                                   <input type="checkbox" name="veg" />
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="check"
+                                   >Milk booth
+                                   <input type="checkbox" name="milk" />
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="check"
+                                   >Hospital
+                                   <input type="checkbox" name="hospital" />
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="check"
+                                   >Bus stand
+                                   <input type="checkbox" name="bus" />
+                                   <span class="checkmark"></span>
+                              </label>
+                         </div>
+                         <div class="column">
+                              <label class="check"
+                                   >Shopping mall
+                                   <input type="checkbox" name="shop" />
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="check"
+                                   >Grocery
+                                   <input type="checkbox" name="grocery" />
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="check"
+                                   >Cinema hall
+                                   <input type="checkbox" name="cinema" />
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="check"
+                                   >Railway station
+                                   <input type="checkbox" name="rail" />
+                                   <span class="checkmark"></span>
+                              </label>
+                         </div>
+                    </div>
+                    <input type="submit" value="Continue" id="button" />
+               </form>
+          </div>
+     </body>
 </html>

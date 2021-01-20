@@ -1,14 +1,46 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
      <head>
-          <title>Registered Succesfully</title>
-          <meta name="viewport" content="width="device-width,intial-scale=1.0">
-          <link rel="stylesheet" href="/css/status.css" />
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>User Registered</title>
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Poppins|Goldman|karla|Open+Sans&effect=anaglyph|shadow-multiple|outline|neon|fire|3d|wallpaper"
+          />
+          
           <link rel="icon" href="icon.png" type="image/png" />
+          <link
+               rel="stylesheet"
+               media="screen and (min-width: 500px)"
+               type="text/css"
+               href="/css/status.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (max-width: 499px)"
+               type="text/css"
+               href="/css/mstatus.css"
+          />
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
      </head>
      <body>
-          <h1>SUCCESS!!</h1>
-          <form action="login.html">
-               <input type="submit" value="Login Here" id="button" />
-          </form>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <div class="container">
+               <h1 class="font-effect-shadow-multiple">Success</h1>
+               <form action="login.html">
+                    <input type="submit" value="Login Here" id="button" />
+               </form>
+          </div>
      </body>
 </html>

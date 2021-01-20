@@ -289,6 +289,7 @@ app.post("/findAddress", (req, res) => {
               firstName: user.firstName,
               lastName: user.lastName,
               email: user.email,
+              /*securityQuestion: user.securityQuestion,*/
               state: user.ownerInfo[0].state,
               district: user.ownerInfo[0].district,
               town: user.ownerInfo[0].town,
@@ -370,6 +371,49 @@ app.post("/newPassword", (req, res) => {
   } else {
     res.sendFile(path.join(__dirname + "/public/login.html"));
   }
+});
+app.post("/setPassword", (req, res) => {
+     User.findOne({ email: req.body.email }).then((user) => {
+          if (!user) {
+               req.session.reset();
+               res.sendFile(path.join(__dirname + "/public/noUser.html"));
+          } else {
+               res.render("resetPassword.hbs", {
+                    email: user.email,
+                    securityQuestion: user.securityQuestion,
+               });
+          }
+     });
+});
+app.post("/resetPassword", (req, res) => {
+     User.findOne({ email: req.body.email }).then((user) => {
+          if (!user) {
+               res.sendFile(path.join(__dirname + "/public/noUser.html"));
+          } else {
+               var securityAnswer = req.body.securityAnswer;
+               var newPassword = req.body.password;
+               if (securityAnswer !== user.securityAnswer) {
+                    res.sendFile(path.join(__dirname + "/public/invalidAnswer.html"));
+               } else {
+                    bcrypt.genSalt(10, (err, salt) => {
+                         bcrypt.hash(newPassword, salt, (err, hash) => {
+                              User.updateOne(
+                                   { email: user.email },
+                                   { password: hash },
+                                   (e, result) => {
+                                        res.status(400).sendFile(
+                                             path.join(
+                                                  __dirname +
+                                                       "/public/resetSuccess.html"
+                                             )
+                                        );
+                                   }
+                              );
+                         });
+                    });
+               }
+          }
+     });
 });
 
 app.get("/logout", (req, res) => {

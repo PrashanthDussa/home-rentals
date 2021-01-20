@@ -1,13 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
      <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
           <title>Contact Us</title>
-         <meta name="viewport" content="width=device-width,intial-scale=1.0">
-          <link rel="stylesheet" media="screen and (min-width: 500px)" type="text/css" href="/css/contact.css" />
-          <link rel="stylesheet" media="screen and (max-width: 499px)" type="text/css" href="/css/mcontact.css" />
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css?family=Poppins|Goldman|karla|Open+Sans&effect=anaglyph|shadow-multiple|outline|neon|fire|3d|wallpaper"
+          />
+           <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
           <link rel="icon" href="icon.png" type="image/png" />
+          <link
+               rel="stylesheet"
+               media="screen and (min-width: 500px)"
+               type="text/css"
+               href="/css/account.css"
+          />
+          <link
+               rel="stylesheet"
+               media="screen and (max-width: 499px)"
+               type="text/css"
+               href="/css/maccount.css"
+          />
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+               $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+               });
+          </script>
      </head>
      <body>
-          <h1><span>prashanth.dussa05@gmail.com</span></h1>
-          <h2><span>7032981227</span></h2>
+          <div class="loader-wrapper" id="loader-wrapper">
+               <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <div class="container">
+               <h1 class="font-effect-shadow-multiple">Contact Us</h1>
+               <h2>Email</h2>
+               <h3>prashanth.dussa05@gmail.com</h3>
+               <h2>Contact number</h2>
+               <h3>7032981227</h3>
+               <br/>
+               <a href="https://www.linkedin.com/in/prashanth-dussa-00a470190/" class="fa fa-linkedin" id="linkedIn"></a>
+               <a href="https://github.com/PrashanthDussa" class="fa fa-github" id="github"></a>
+               <a href="https://www.instagram.com/prashanthdussa/" class="fa fa-instagram" id="insta"></a>
+          </div>
      </body>
 </html>
