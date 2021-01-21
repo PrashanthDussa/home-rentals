@@ -28,13 +28,19 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script>
                $(window).on("load", function () {
-                    $(".loader-wrapper").fadeOut("slow");
+                    $(".loader").fadeOut("slow");
                });
           </script>
      </head>
      <body>
-          <div class="loader-wrapper" id="loader-wrapper">
+<!--           <div class="loader-wrapper" id="loader-wrapper">
                <span class="loader"><span class="loader-inner"></span></span>
+          </div> -->
+          <div class="loader">
+               <div id="loop" class="center"></div>
+               <div id="bike-wrapper" class="center">
+                    <div id="bike" class="centerBike"></div>
+               </div>
           </div>
           <div class="container">
                <h2 class="font-effect-fire">HOME RENTALS</h2>
