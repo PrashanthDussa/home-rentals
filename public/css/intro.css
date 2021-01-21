@@ -142,7 +142,7 @@ body {
 #loop {
      height: 100px;
      width: 100px;
-     border: white solid 4px;
+     border: #bb5f27 solid 4px;
      border-radius: 200px;
 }
 
@@ -150,8 +150,8 @@ body {
      background: -moz-linear-gradient(
           left,
           rgba(187, 95, 39, 0) 0%,
-          rgb(255, 255, 255) 30%,
-          rgb(255, 255, 255) 70%,
+          rgba(187, 95, 39, 1) 30%,
+          rgba(187, 95, 39, 1) 70%,
           rgba(187, 95, 39, 0) 100%
      );
      background: -webkit-gradient(
@@ -159,36 +159,36 @@ body {
           left top,
           right top,
           color-stop(0%, rgba(187, 95, 39, 0)),
-          color-stop(30%, rgba(255, 255, 255)),
-          color-stop(70%, rgba(255, 255, 255)),
+          color-stop(30%, rgba(187, 95, 39, 1)),
+          color-stop(70%, rgba(187, 95, 39, 1)),
           color-stop(100%, rgba(187, 95, 39, 0))
      );
      background: -webkit-linear-gradient(
           left,
           rgba(187, 95, 39, 0) 0%,
-          rgb(255, 255, 255) 30%,
-          rgb(255, 255, 255) 70%,
+          rgba(187, 95, 39, 1) 30%,
+          rgba(187, 95, 39, 1) 70%,
           rgba(187, 95, 39, 0) 100%
      );
      background: -o-linear-gradient(
           left,
           rgba(187, 95, 39, 0) 0%,
-          rgb(255, 255, 255) 30%,
-          rgb(255, 255, 255) 70%,
+          rgba(187, 95, 39, 1) 30%,
+          rgba(187, 95, 39, 1) 70%,
           rgba(187, 95, 39, 0) 100%
      );
      background: -ms-linear-gradient(
           left,
           rgba(187, 95, 39, 0) 0%,
-          rgb(255, 255, 255) 30%,
-          rgb(255, 255, 255) 70%,
+          rgba(187, 95, 39, 1) 30%,
+          rgba(187, 95, 39, 1) 70%,
           rgba(187, 95, 39, 0) 100%
      );
      background: linear-gradient(
           to right,
           rgba(187, 95, 39, 0) 0%,
-          rgb(255, 255, 255) 30%,
-          rgb(255, 255, 255) 70%,
+          rgba(187, 95, 39, 1) 30%,
+          rgba(187, 95, 39, 1) 70%,
           rgba(187, 95, 39, 0) 100%
      );
      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00bb5f27', endColorstr='#00bb5f27', GradientType=1);
@@ -232,5 +232,5 @@ body {
           margin-left: 264px;
           transform: rotate(-360deg);
           opacity: 0;
-     }}
-
+     }
+}
